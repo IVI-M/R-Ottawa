@@ -17,7 +17,7 @@ Pages for people interested in learning and using R in National Capital Region a
 
 ### News:   
 2020-03-31:    
-- Zoom meeting is booked for every Wednesday 11:30 - 12:10. Details in [ Community ](community.md).
+- Zoom meeting is booked for every Wednesday 12:20-13:00. Details in [ Community ](community.md).
 - Invitation is extended from CBSA to all GoC.  
 - Starting from April 1 meeting, we'll be using public Covid-19 data.
 
