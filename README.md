@@ -8,8 +8,7 @@ Pages for people interested in learning and using R in National Capital Region a
 [[Community]](community.md) [ [About] ](about.md)
 -->
 
-[ Home ] (https://IVI-M.github.io/r-ottawa/) -- [ R-101 ](r101.md) -- [ Community ](community.md) -- [ Resources ](resources.md)  
-
+[ Home ](https://IVI-M.github.io/r-ottawa/) -- [ R-101 ](r101.md) --  [ Resources ](resources.md) -- [ Community ](community.md) 
 
 ### News:   
 2020-03-31:    
