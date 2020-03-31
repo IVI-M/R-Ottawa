@@ -2,7 +2,7 @@
 R Ottawa: Learning and using R together in National Capital Region - Resouces for weekly meet-ups -->
 
 
-## Welcome [R Ottawa](https://ivi-m.github.io/r-ottawa/)! 
+## Welcome to [R Ottawa](https://ivi-m.github.io/r-ottawa/)! 
 Pages for people interested in learning and using R in National Capital Region and elsewhere
 
 <!-- 
