@@ -1,7 +1,7 @@
 
 # Community
 
-[ Home ](https://IVI-M.github.io/r-ottawa/) -- [ R-101 ](r101.md) --  [ Resources ](resources.md) -- [ Community ](community.md) 
+[ Home ](https://IVI-M.github.io/R-Ottawa/) -- [ R-101 ](r101.md) --  [ Resources ](resources.md) -- [ Community ](community.md) 
 
 
 ### GC:
