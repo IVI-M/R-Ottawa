@@ -12,19 +12,20 @@ Pages for people interested in learning and using R in National Capital Region a
 [[Community]](community.md) [ [About] ](about.md)
 -->
 
-[ [Weekly meet-up] ](weekly.md)
-[ [Resources] ](get.md)  
+[ [R-101] ](r101.md) 
+[ [Community] ] (community.md)
+[ [Resources] ](resources.md)  
 
 
-#### News:   
+### News:   
 2020-03-31:    
-- Zoom meeting is booked for every Wednesday 11:30 - 12:10. Details in [ [Weekly meet-up] ](weekly.md)
+- Zoom meeting is booked for every Wednesday 11:30 - 12:10. Details in [ [Community] ] (community.md)
 - Invitation is extended from CBSA to all GoC.  
-- At next meeting we'll be writing codes to read and visualize open Covid-19 data
+- Starting from April 1 meeting we'll be writing codes using public Covid-19 data
 
 
 
+### Questions/comments:
 
-
-Last updated: 2020-03-31. Questions/comments: dg@ivim.ca (dmitry@gorodnichy.ca) 
+Dmitry Gorodnichydg@ivim.ca (dmitry@gorodnichy.ca) 
 <!-- Questions/comments: dg@ivim.ca (dmitry@gorodnichy.ca) or via gcconnex.ca -->
