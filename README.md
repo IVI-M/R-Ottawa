@@ -1,8 +1,4 @@
-<!-- # r-ottawa [https://IVI-M.github.io/r-ottawa/](https://IVI-M.github.io/r-ottawa/)
-R Ottawa: Learning and using R together in National Capital Region - Resouces for weekly meet-ups -->
-
-
-## Welcome to [R Ottawa](https://ivi-m.github.io/r-ottawa/)! 
+# Welcome to [R Ottawa](https://ivi-m.github.io/r-ottawa/)! 
 Pages for people interested in learning and using R in National Capital Region and elsewhere
 
 <!-- 
@@ -12,7 +8,7 @@ Pages for people interested in learning and using R in National Capital Region a
 [[Community]](community.md) [ [About] ](about.md)
 -->
 
-[ R-101 ](r101.md) -- [ Community ](community.md) -- [ Resources ](resources.md)  
+[ Home ] (https://IVI-M.github.io/r-ottawa/) -- [ R-101 ](r101.md) -- [ Community ](community.md) -- [ Resources ](resources.md)  
 
 
 ### News:   
