@@ -25,7 +25,7 @@ Pages for people interested in learning and using R in National Capital Region a
 
 
 
-### Questions/comments:
+### Contact:
 
-Dmitry Gorodnichydg@ivim.ca (dmitry@gorodnichy.ca) 
+Ideas, questions welcome. Please email them to dg @ ivim.ca 
 <!-- Questions/comments: dg@ivim.ca (dmitry@gorodnichy.ca) or via gcconnex.ca -->
