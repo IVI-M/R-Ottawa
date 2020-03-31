@@ -3,10 +3,16 @@
 https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc
 
 
-### Weekly meet-ups:  Every week on Wed
-
+### Lunches with Data Challenges - Weekly meet-ups
 ```
-Topic: Morning Coffee with Data Challenges
-Time: Mar 25, 2020 11:30-12:10 AM Eastern Time (US and Canada)
+Topic: Lunches with Data Challenges
+Time: Every Wednesday, starting April 1,2000 at 12:20-12:50 AM Eastern Time (US and Canada)
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550
 ```
+
+### Examples:
+
+- https://itrack.shinyapps.io/covid/ (tbd)
+- https://itrack.shinyapps.io/border/
+- https://itrack.shinyapps.io/PSES/
+- https://itrack.shinyapps.io/PSES-CBSA-SE
