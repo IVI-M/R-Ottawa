@@ -1,6 +1,11 @@
-## GC
 
-https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc
+## Community
+
+[ R-101 ](r101.md) -- [ Community ](community.md) -- [ Resources ](resources.md)  
+
+### GC:
+
+- https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc
 
 
 ### Lunches with Data Challenges - Weekly meet-ups
