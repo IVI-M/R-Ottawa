@@ -11,7 +11,7 @@ if (F) { # 0. General libraries and functions ----
   library(R6)
   
   library(ggplot2)
-  library(data.table)
+  library(data.table); library(dtplyr)
   options(datatable.print.class=TRUE)
   library(lubridate,  quietly=T)
   options(lubridate.week.start =  1)

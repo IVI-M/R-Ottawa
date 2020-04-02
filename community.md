@@ -14,6 +14,7 @@
 Topic: Lunches with Data Challenges
 Time: Every Wednesday, starting April 1,2000 at 12:20-12:50 AM Eastern Time (US and Canada)
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550
+Password: [sent by email - please contact the organizer if you have note received it]
 ```
 
 ### Examples:

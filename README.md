@@ -1,4 +1,4 @@
-# Welcome to [R Ottawa](https://ivi-m.github.io/r-ottawa/)! 
+# Welcome to [R Ottawa](https://ivi-m.github.io/R-Ottawa/)! 
 
 <!-- 
 [ [R-101 (beginners)] ](r101.md) [ [Weekly meet-up] ](weekly.md)
