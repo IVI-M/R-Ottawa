@@ -50,4 +50,5 @@ Password: [please contact the organizer to obtain it]
   - automated report generation using `knitr` and `glue`
 
 
-Check  [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for samples of discussed R codes.
+Check  [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for samples of discussed R codes.   
+Back to [R Ottawa](https://ivi-m.github.io/R-Ottawa/). 
