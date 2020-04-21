@@ -1,7 +1,7 @@
 
 # Community
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) -- [ R-101 ](r101.md) --  [ Resources ](resources.md) -- [ Community ](community.md) 
+[ Home ](https://IVI-M.github.io/R-Ottawa/) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) --  [ Resources ](resources.md) -- [ Community ](community.md) 
 
 
 ### GC:
@@ -19,7 +19,7 @@ Password: [sent by email - please contact the organizer if you have note receive
 
 ### Examples:
 
-- https://itrack.shinyapps.io/covid/ (tbd)
+- [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/) - currently used in our discussions
 - https://itrack.shinyapps.io/border/
 - https://itrack.shinyapps.io/PSES/
 - https://itrack.shinyapps.io/PSES-CBSA-SE
