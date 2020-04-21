@@ -33,7 +33,7 @@ Password: [please contact the organizer to obtain it]
   - functional, modular, scalable, agile programming
   - software Engineering 101 (naming conventions, splitting and sourcing, source control, github)
   
-- https://itrack.shinyapps.io/border/
+- [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)
   - use of `leaflet` (interactive map)
   - building predictive models / machine learning
   - machine learning 101 (features, assumptions, predictive models), 
@@ -41,9 +41,9 @@ Password: [please contact the organizer to obtain it]
   - operations reseach 101 (resource optimization, constraint satisfaction)
   - running simulations  using `simmer`
   
-- https://itrack.shinyapps.io/PSES/ (https://itrack.shinyapps.io/PSES-CBSA-SE)
-  - Compare to: PSES Power BI Visualization Tool from https://hranalytics-analytiquerh.tbs-sct.gc.ca
-  - graphics with `ggplot2`
+- [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/) ([https://itrack.shinyapps.io/PSES-CBSA-SE](https://itrack.shinyapps.io/PSES-CBSA-SE))
+  - Compare to: PSES Power BI Visualization Tool from [https://hranalytics-analytiquerh.tbs-sct.gc.ca](https://hranalytics-analytiquerh.tbs-sct.gc.ca)
+  - graphics and annotations with `ggplot2`
   - nested menus in `shiny`
   - `flexdahboard` layouts and options
   - data aggregation using `data.table`
