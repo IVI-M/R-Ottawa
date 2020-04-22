@@ -19,7 +19,7 @@ Password: [please contact the organizer to obtain it]
 
 ### Examples / topic used in discussions
 
-- [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/) 
+- [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/) [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
   - accessing remote data: from GitHub (JHU database), from Google Docs (UofT database)
   - fast data manipulation using `data.table`
   - strategies for dealing with data abnomalities
@@ -33,7 +33,7 @@ Password: [please contact the organizer to obtain it]
   - functional, modular, scalable, agile programming
   - software Engineering 101 (naming conventions, splitting and sourcing, source control, github)
   
-- [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)
+- [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)  [(LinkedIn article](https://www.linkedin.com/pulse/predicting-optimizing-border-wait-time-using-dmitry-gorodnichy/))
   - use of `leaflet` (interactive map)
   - building predictive models / machine learning
   - machine learning 101 (features, assumptions, predictive models), 
@@ -41,7 +41,7 @@ Password: [please contact the organizer to obtain it]
   - operations reseach 101 (resource optimization, constraint satisfaction)
   - running simulations  using `simmer`
   
-- [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/) ([https://itrack.shinyapps.io/PSES-CBSA-SE](https://itrack.shinyapps.io/PSES-CBSA-SE))
+- [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/)  [(LinkedIn article](https://www.linkedin.com/pulse/analyzing-improving-public-service-performance-using-data-gorodnichy/))
   - Compare to: PSES Power BI Visualization Tool from [https://hranalytics-analytiquerh.tbs-sct.gc.ca](https://hranalytics-analytiquerh.tbs-sct.gc.ca)
   - graphics and annotations with `ggplot2`
   - nested menus in `shiny`
