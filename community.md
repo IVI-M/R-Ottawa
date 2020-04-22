@@ -12,7 +12,7 @@
 ### Lunches with Data Challenges - Weekly meet-ups
 ```
 Topic: Lunches with Data Challenges
-Time: Every Wednesday, starting April 1,2000 at 12:20-12:50 AM Eastern Time (US and Canada)
+Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550
 Password: [please contact the organizer to obtain it]
 ```
