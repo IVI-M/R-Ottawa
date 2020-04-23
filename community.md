@@ -1,7 +1,7 @@
 
 # Community
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) --  [ Resources ](resources.md) -- [ Community ](community.md) 
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](community.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
 
 ### GC:
