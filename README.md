@@ -7,16 +7,16 @@
 [[Community]](community.md) [ [About] ](about.md)
 -->
 
-[Home](https://IVI-M.github.io/r-ottawa/) -- [R-101](r101.md) --  [Resources](resources.md) -- [Community](community.md) 
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
 Pages for people interested in learning and using R in National Capital Region and elsewhere
 
 
 ### News:   
-2020-03-31:    
-- Zoom meeting is booked for every Wednesday 12:20-13:00. Details in [Community](community.md).
-- Invitation is extended from CBSA to all GoC.  
-- Starting from April 1 meeting, we'll be using public Covid-19 data.
+2020-02-25:    
+- Zoom meet-ups moved to Wednesday 12:20-13:00. Details in [Community](community.md).
+- Invitation to [Lunches with Data Challenges](meetups.md) meet-ups is extended from CBSA to all GoC.  
+- Starting  April 1, we discuss data challenges related to Covid-19 data analysis.
 
 
 
