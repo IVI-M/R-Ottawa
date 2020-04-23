@@ -1,19 +1,27 @@
 
 
-# Community
+# Lunches with Data Challenges - Weekly meet-ups
 
 [ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetup.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
 
-### Lunches with Data Challenges - Weekly meet-ups
+### Dial-in details
 
 Topic: Lunches with Data Challenges    
-Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)    
+Lead by: Dmitry Gorodnichy
+Time: Every Wednesday, starting March 18 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)    
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550    
 Password: *please contact the organizer or get it from [GCConnex](https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc)*
- 
 
-### Examples / problems used in discussions
+### Meetings archives 
+
+Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use using R and AI). 
+
+
+
+The discussed codes, answers and questions will be archived in [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101).
+
+###  List of topics available for discussion
 
 - [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/):   
 Interactive Web App to better visualize and predict the spread of Covid19 pandemic [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
