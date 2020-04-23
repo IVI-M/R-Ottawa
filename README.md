@@ -14,9 +14,13 @@ Pages for people interested in learning and using R in National Capital Region a
 
 ### News:  
 
+2020-04-08: 
+- Codes to read Canada Covid data from UoT are added in [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
+
 2020-04-01:     
 - Invitation to [Lunches with Data Challenges](meetups.md) meet-ups is extended from CBSA to all GoC.  
 - Starting  April 1, we use Covid-19 data to discuss related data challenges
+
 2020-03-25:    
 - Zoom meet-ups moved to Wednesday 12:20-13:00. Details in [Community](community.md).
 
