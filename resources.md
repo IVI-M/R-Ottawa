@@ -40,11 +40,12 @@ https://github.com/rstudio/RStartHere
 
 ### Shiny / Dashboards
 
-If flexdashboard (older versions of R) does not work, http://rstudio.github.io/shinydashboard/  
+When flexdashboard (older versions of R) does not work, one can use http://rstudio.github.io/shinydashboard/  
 
-free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny - done
-https://www.datacamp.com/courses/building-dashboards-with-shinydashboard poor
-https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny-case-studies
+free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny - done   
+https://www.datacamp.com/courses/building-dashboards-with-shinydashboard poor        
+https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny-case-studies   
+https://deanattali.com/blog/advanced-shiny-tips/   
 
 ### Webinars:
 
