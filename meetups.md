@@ -2,15 +2,15 @@
 
 # Lunches with Data Challenges - Weekly meet-ups
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetup.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
 
 ### Dial-in details
 
 Topic: Lunches with Data Challenges    
-Lead by: Dmitry Gorodnichy
+Lead by: Dmitry Gorodnichy      
 Time: Every Wednesday, starting March 18 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)    
-Join Zoom Meeting: https://us04web.zoom.us/j/337086550    
+Join Zoom Meeting: https://us04web.zoom.us/j/337086550     
 Password: *please contact the organizer or get it from [GCConnex](https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc)*
 
 ### Meetings archives 
