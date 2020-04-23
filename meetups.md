@@ -1,25 +1,22 @@
 
+
 # Community
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](community.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
-
-
-### GC:
-
-- https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetup.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
 
 ### Lunches with Data Challenges - Weekly meet-ups
-```
-Topic: Lunches with Data Challenges
-Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)
-Join Zoom Meeting: https://us04web.zoom.us/j/337086550
-Password: [please contact the organizer to obtain it]
-```
 
-### Examples / topic used in discussions
+Topic: Lunches with Data Challenges    
+Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada) 
+Join Zoom Meeting: https://us04web.zoom.us/j/337086550 
+Password: *please contact the organizer or get it from [GCConnex](https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc)*
+ 
 
-- [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/) [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
+### Examples / problems used in discussions
+
+- [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/):   
+Interactive Web App to better visualize and predict the spread of Covid19 pandemic [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
   - accessing remote data: from GitHub (JHU database), from Google Docs (UofT database)
   - fast data manipulation using `data.table`
   - strategies for dealing with data abnomalities
@@ -33,7 +30,8 @@ Password: [please contact the organizer to obtain it]
   - functional, modular, scalable, agile programming
   - software Engineering 101 (naming conventions, splitting and sourcing, source control, github)
   
-- [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)  [(LinkedIn article](https://www.linkedin.com/pulse/predicting-optimizing-border-wait-time-using-dmitry-gorodnichy/))
+- [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)   
+Predicting and optimizing Border Wait Time using Artificial Intelligence  [(LinkedIn article](https://www.linkedin.com/pulse/predicting-optimizing-border-wait-time-using-dmitry-gorodnichy/))
   - use of `leaflet` (interactive map)
   - building predictive models / machine learning
   - machine learning 101 (features, assumptions, predictive models), 
@@ -41,7 +39,8 @@ Password: [please contact the organizer to obtain it]
   - operations reseach 101 (resource optimization, constraint satisfaction)
   - running simulations  using `simmer`
   
-- [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/)  [(LinkedIn article](https://www.linkedin.com/pulse/analyzing-improving-public-service-performance-using-data-gorodnichy/))
+- [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/):   
+Improving Public Service performance using Public Service Employee Surveys and Data Science [(LinkedIn article](https://www.linkedin.com/pulse/analyzing-improving-public-service-performance-using-data-gorodnichy/))
   - Compare to: PSES Power BI Visualization Tool from [https://hranalytics-analytiquerh.tbs-sct.gc.ca](https://hranalytics-analytiquerh.tbs-sct.gc.ca)
   - graphics and annotations with `ggplot2`
   - nested menus in `shiny`
