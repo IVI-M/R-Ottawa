@@ -1,13 +1,14 @@
 
 # Resources
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) -- [ R-101 ](r101.md) --  [ Resources ](resources.md) -- [ Community ](community.md) 
 
-## platforms for coding R online 
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
+
+## Platforms for coding R online 
 
 a) https://rextester.com/l/r_online_compiler
 b) https://repl.it/languages/rlang
-c) https://rstudio.cloud/
+c) https://rstudio.cloud/ (Preferrable)
 
 ## Blog articles
 
