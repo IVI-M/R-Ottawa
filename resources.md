@@ -42,8 +42,8 @@ https://github.com/rstudio/RStartHere
 
 When flexdashboard (older versions of R) does not work, one can use http://rstudio.github.io/shinydashboard/  
 
-free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny - done   
-https://www.datacamp.com/courses/building-dashboards-with-shinydashboard poor        
+free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny  
+https://www.datacamp.com/courses/building-dashboards-with-shinydashboard       
 https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny-case-studies   
 https://deanattali.com/blog/advanced-shiny-tips/   
 
@@ -91,7 +91,7 @@ https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse
 https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1
 https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2
 https://www.datacamp.com/courses/introduction-to-git-for-data-science
-https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund - X
+https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund 
 
 ###  data.table
 
