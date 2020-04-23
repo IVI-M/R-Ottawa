@@ -8,8 +8,8 @@
 ### Lunches with Data Challenges - Weekly meet-ups
 
 Topic: Lunches with Data Challenges    
-Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada) 
-Join Zoom Meeting: https://us04web.zoom.us/j/337086550 
+Time: Every Wednesday, starting March 25 1,2020 at 12:20-12:50 AM Eastern Time (US and Canada)    
+Join Zoom Meeting: https://us04web.zoom.us/j/337086550    
 Password: *please contact the organizer or get it from [GCConnex](https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc)*
  
 
