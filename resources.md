@@ -6,9 +6,9 @@
 
 ## Platforms for coding R online 
 
-a) https://rextester.com/l/r_online_compiler
-b) https://repl.it/languages/rlang
-c) https://rstudio.cloud/ (Preferrable)
+a) https://rextester.com/l/r_online_compiler    
+b) https://repl.it/languages/rlang    
+c) [https://rstudio.cloud/](https://rstudio.cloud/) (Preferrable)   
 
 ## Blog articles
 
