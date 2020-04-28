@@ -25,7 +25,12 @@ R version 3.4.3 (2017-11-30)`. Similarly, not all packages are available, and th
 
 Nevertherless, what we have is already quite extraodinary, yielding opportunity to revolutionize how data science is done here; and, 
 in fact, 
-not any data science and not only anything related to data processing, visualization visualization and reporting, any other scientific and non-scientific , writting memos. collaborative projects  - talk to any of us
+not any data science and not only anything related to data processing, visualization  and reporting, but also for writting memos, reports, decks (scientific and as non-scientific), as well as leading collaborative projects - for work and fun.
+
+
+Talk to any of us, will show you how.
+
+
 ***
 
 **Installing RStudio**
