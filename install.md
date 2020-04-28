@@ -11,10 +11,10 @@
 In Summer 2019, CBSA IT Security approved Anaconda, and RStudio as part of it, for installation on corporate systems.
 
 This means that you can  now have the RStudio icon  on your Computer Desktop just beside the MS Excel or MS Word or MS PowerPoint icons, 
-and you can launch just as easily as any other program on your computer, simply by clicking on it.
-
-And once you launched it, there's nothing stopping from taking all power of it for anything you would normally
+and you can launch it just as easily as any other program on your computer, simply by clicking on it.
+And once you launched it, there's nothing stopping you from taking all power of it  - for anything you  normally
 do using Excel, Word or PowerPoint, and much more. 
+
 It's free (so you can also have it on your home computer), learning resources are also free, as is R community support, and
 they all are superb.
 There are a few steps however for you to do before RStudio icon will appears on your Desktop. They are outlined below.
