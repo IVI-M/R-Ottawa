@@ -22,26 +22,27 @@ See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archi
 2020/04/29: (we will try to record this session, so you can follow it off-line) 
 
 - Jump start to coding in R
-- programming online in rstudio.cloud
-- doing tutorial from rstudio together (starting from https://rstudio.com/)
+- Programming together online in rstudio.cloud (requires gmail or any other email to login)
+- Doing tutorial from rstudio together (starting from https://rstudio.com/)
 
 
 2020/04/22: (Zoom meetings extended to GC)
 
-- Introductions to wider CG community
+- Introductions to wider GC community
 - Overview of R Ottawa resources, apps and topics of interest
 - Walk through the iTrack Covid App, and associated data processing challenges (e.g. dealing with missing/negative entries)
-- code to read data from JHU database - added
+- Code to read data from JHU database - added
 
-2020/04/01:  (
+2020/04/01:  (Focus shifted to Covid data)
 
 - Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use using R and AI). 
 - Public datasets on Covid
   - Can't read Covid from Stats Canada site. Code to read data from UofT google doc - added
 
-2020/04/01:  
+2020/03/24:  
 
-- Overview of oppotunities for discussing and learning 
+- Overview of opportunities for discussing and learning, 
+
 
 ###  List of topics available for discussion
 
