@@ -39,37 +39,27 @@ Talk to any of us, will show you how.
  
 
 Step 1. Please check if you can read access to the following folder (i.e. click in the link):
-
 \\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io
 
 
 IF YOU DON'T , STOP RIGHT HERE  - and let me know. Your name will need to be submitted to grant you access to this folder
 
-
 If you do, then proceed to next step:
 
  
 
- 
-
-Step 2. Copy Anaconda3-5.1.0-Windows-x86_64.exe  to local  user account  (which is C:\Users\<6 Digit User>\) from i: drive (which is \\SH12CFFP0001\install):
-
-And Run it from there:
+Step 2. Copy `Anaconda3-5.1.0-Windows-x86_64.exe`   from i: drive (which is `\\SH12CFFP0001\install`) to your local  user account  (which is `C:\Users\<6 Digit User>\`), and Run it from there.
 
 
-Destination Folder:
-
-C:\Users\<6 Digit User>\Anaconda3\ is displayed
-
+Destination Folder: `C:\Users\<6 Digit User>\Anaconda3\` is displayed
 (where <User> is the actual user 6 digit account ID)
 
  
-
 Uncheck the following Advanced Options:
 
-·         Add Anaconda to my PATH environment variable
+- Add Anaconda to my PATH environment variable
 
-·         Register Anaconda as my default Python 3.6
+- Register Anaconda as my default Python 3.6
 
  
 
@@ -83,14 +73,13 @@ Step 3. copy `\\SH12CFFP0001\install\Anaconda3_510\.condarc` file to user home d
 
 Step 4. Open Anaconda Prompt (from Start-> Anaconda3 (64-bit) -> Anaconda Prompt) and run:    
 
-
 `conda create -n e2020.02.01 mro-base rstudio`   (replace `e2020.02.01` with `eDATE_YOU_INSTALL`)
 
 (NB: we don't run   `conda update conda` or ` conda update anaconda` )  
 
 <!-- Currently we have  conda-4.6.14 as of Jan 2020. Do not change it)   -->
 
-This will create a shortcut  (R) on desktop .
+This will create a shortcut  (R) on desktop.
 Test it. If it opens OK, you are ready go. 
 But lets load useful packages to your safe space (so called virtual environemnt) where you'll be coding.
 
@@ -107,10 +96,9 @@ Note the following libraries are installed by default:
  
 
 
-(Step 6)
+(Step 6.)
 
-If you have rmarkdown problems, run this: 
-
+If you have rmarkdown problems, run this:   
 `conda install pandoc=1.19.2.1`
 
 
