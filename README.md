@@ -19,8 +19,10 @@ Pages for people interested in learning and using R in National Capital Region a
 - Starting  April 1, we use Covid-19 data to discuss related data challenges
 
 2020-03-25:    
-- Zoom meet-ups moved to Wednesday 12:20-13:00. Details in [Community](community.md).
+- Zoom meet-ups moved to Wednesday 12:20-13:00, becoming "Lunches" (instead of Morning Coffees). Details in [Community](community.md).
 
+2020-03-18
+- Our informal Wednesday Morning Coffee with Data Dhallenges meetings, which we've been having in CBSA since last Summer, go online with Zoom. Details in [Community](community.md).
 
 
 
