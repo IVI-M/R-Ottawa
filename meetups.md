@@ -13,13 +13,35 @@ Time: Every Wednesday, starting March 18 1,2020 at 12:20-12:50 AM Eastern Time (
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550     
 Password: *please contact the organizer or get it from [GCConnex](https://gcconnex.gc.ca/groups/profile/5394852/data-science-goc)*
 
-### Meetings archives 
 
-Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use using R and AI). 
+### Agendas:
+
+See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes.
 
 
+2020/04/29: (we will try to record this session, so you can follow it off-line) 
 
-The discussed codes, answers and questions will be archived in [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101).
+- Jump start to coding in R
+- programming online in rstudio.cloud
+- doing tutorial from rstudio together (starting from https://rstudio.com/)
+
+
+2020/04/22: (Zoom meetings extended to GC)
+
+- Introductions to wider CG community
+- Overview of R Ottawa resources, apps and topics of interest
+- Walk through the iTrack Covid App, and associated data processing challenges (e.g. dealing with missing/negative entries)
+- code to read data from JHU database - added
+
+2020/04/01:  (
+
+- Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use using R and AI). 
+- Public datasets on Covid
+  - Can't read Covid from Stats Canada site. Code to read data from UofT google doc - added
+
+2020/04/01:  
+
+- Overview of oppotunities for discussing and learning 
 
 ###  List of topics available for discussion
 
