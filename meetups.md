@@ -22,9 +22,9 @@ See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archi
 
 2020/04/29: (we will try to record this session, so you can follow it off-line) 
 
-- Jump start to coding in R (on you
+- Jump start to coding in R 
 - Programming together online in rstudio.cloud (requires gmail or any other email to login)
-- Doing tutorial from rstudio together (starting from https://rstudio.com/)
+- Doing tutorial from rstudio together (from https://rstudio.com/)
 
 
 2020/04/22: (Zoom meetings extended to GC)
@@ -41,13 +41,13 @@ See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archi
 
 2020/04/01:  (Focus shifted to Covid data)
 
-- Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use using R and AI). 
+- Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use of it using R and AI). 
 - Public datasets on Covid - in Canada and International
 
 
-2020/03/24: (Meet-ups go zoom)
+2020/03/24: (Meet-ups go Zoom)
 
-- What's up our work and Community  with new normal -  in CBSA and elsewhere
+- What's up with our work and Community  with new normal -  in CBSA and elsewhere
 - Where do we go from here
 
 
