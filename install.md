@@ -1,4 +1,4 @@
- (
+
 
 # Installing RStudio  
 
@@ -30,37 +30,29 @@ not any data science and not only anything related to data processing, visualiza
 
 **Installing RStudio**
 
---
 
  
 
-1. Please check if you can read access to the following folder (i.e. click in the link):
+Step 1. Please check if you can read access to the following folder (i.e. click in the link):
 
 \\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io
 
- 
 
- 
+IF YOU DON'T , STOP RIGHT HERE  - and let me know. Your name will need to be submitted to grant you access to this folder
 
-IF YOU DON'T , STOP RIGHT HERE  - and let me know.
 
- 
-
-If you do, then proceed to next:
+If you do, then proceed to next step:
 
  
 
  
 
-3. Copy Anaconda3-5.1.0-Windows-x86_64.exe  to local  user account  (which is C:\Users\<6 Digit User>\) from i: drive (which is \\SH12CFFP0001\install):
+Step 2. Copy Anaconda3-5.1.0-Windows-x86_64.exe  to local  user account  (which is C:\Users\<6 Digit User>\) from i: drive (which is \\SH12CFFP0001\install):
 
 And Run it from there:
 
- 
 
- 
-
-Destination Folder 
+Destination Folder:
 
 C:\Users\<6 Digit User>\Anaconda3\ is displayed
 
@@ -76,109 +68,45 @@ Uncheck the following Advanced Options:
 
  
 
-It will take time. In meanwhile read this: 
+It will take time. In meanwhile read this:   `\\SH12CFFP0001\install\Anaconda3_510\DOCS\Anaconda3_510_ENG_V1.3.docx` 
 
  
 
-2. Read: \\SH12CFFP0001\install\Anaconda3_510\DOCS\Anaconda3_510_ENG_V1.3.docx
+Step 3. copy `\\SH12CFFP0001\install\Anaconda3_510\.condarc` file to user home directory (i.e. c:\Users\<6 Digit User>)
 
  
 
- 
+Step 4. Open Anaconda Prompt (from Start-> Anaconda3 (64-bit) -> Anaconda Prompt) and run:    
+
+
+`conda create -n e2020.02.01 mro-base rstudio`   (replace `e2020.02.01` with `eDATE_YOU_INSTALL`)
+
+(NB: we don't run   `conda update conda` or ` conda update anaconda` )  
+
+<!-- Currently we have  conda-4.6.14 as of Jan 2020. Do not change it)   -->
+
+This will create a shortcut  (R) on desktop .
+Test it. If it opens OK, you are ready go. 
+But lets load useful packages to your safe space (so called virtual environemnt) where you'll be coding.
 
  
+Step 5.
+In Anaconda Prompt terminal run:    
+`conda activate e2020.02.11`
 
-4. copy \\SH12CFFP0001\install\Anaconda3_510\.condarc file to user home directory (i.e. c:\Users\<6 Digit User>)
+and then run:    
+`(e2020.02.11) C:\Users\gxd006>conda install git r-data.table r-ggplot2 r-lubridate  r-plotly -dt` 
 
+Note the following libraries are installed by default: 
+`r-r6, magrittr, readxl , readr, stringr`
  
 
- 
 
- 
+(Step 6)
 
- 
+If you have rmarkdown problems, run this: 
 
-Then wait for me or try yourself:
-
- 
-
-5. Open Anaconda terminal and run:
+`conda install pandoc=1.19.2.1`
 
 
-              conda update conda   ( in conda-4.6.14  Jan 2020. Do not )
-
-              conda update anaconda <-- dont do this one
-
- 
-6.  in the same Anaconda terminal run:
-
- 
-
-conda create -n e2020.02.01 mro-base rstudio   
---> This will creates a shortcut  (R) on desktop .
-
- 
-
-Test it that it opens OK.
-
- 
-
-7. In Anaconda terminal run:
-conda activate e2020.02.11
-
-8. Add libraries 
-
-(e2020.02.11) C:\Users\gxd006>conda install git r-data.table r-ggplot2 r-lubridate  r-plotly r-dygraphs r-dt 
-
-libraries installed by default: 
-r-r6, magrittr, readxl , readr, stringr
- 
-
- 
-need to be installed separately
-  library(ggpubr)
-  library(GGally)
- 
-
-XXX r-flexdashboard -> removes mro  NOT XXX 
-
-
-> packageVersion("rmarkdown")
-
-[1] ‘1.8’
-
-> library(rmarkdown)
-
-> rmarkdown::pandoc_version()
-
-[1] ‘2.2.3.2’
-
-  Subject: RE: R markdown tabs, toc, guide
-
- 
-
-It looks like it might be a bug with certain versions of rmarkdown: https://stackoverflow.com/questions/47639445/tabs-not-rendering-when-knitting-rmarkdown-to-html
-
- 
-
-Can you guys check which version of rmarkdown and pandoc you have?
-
- 
-
-> packageVersion("rmarkdown")
-
-
-
-[1] ‘1.8’
-> rmarkdown::pandoc_version()
-[1] ‘1.19.2.1’
-
-
-
-
-conda activate e2020.03.02-markdown_issues
-
-
- 
-
-  conda install pandoc=1.19.2.1
+You are all set now.
