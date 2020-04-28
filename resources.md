@@ -15,12 +15,10 @@ Beginners:
 - https://rstudio.com/
   - https://education.rstudio.com/learn/beginner/
 
-
 Intermediate:
 - https://r4ds.had.co.nz/  (https://jrnold.github.io/r4ds-exercise-solutions/)
 - https://stat545.com/
 - https://datasciencebox.org/
-- https://www.rstudio.com/resources/ 
 
 ## Blogs
 
