@@ -6,7 +6,7 @@
 
 ## Platforms for coding R online 
 
-a) https://rextester.com/l/r_online_compiler,  https://repl.it/languages/rlang    (no login required)
+a) https://rextester.com/l/r_online_compiler,  https://repl.it/languages/rlang    (no login required)     
 c) [https://rstudio.cloud/](https://rstudio.cloud/) (login required) - All in One place for learning and coding   
 
 ## Teach yourself
