@@ -1,8 +1,10 @@
 # Welcome to [R Ottawa](https://ivi-m.github.io/R-Ottawa/)! 
 
+Pages for people interested in learning and using R in National Capital Region and elsewhere
+
 [ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
-Pages for people interested in learning and using R in National Capital Region and elsewhere
+
 
 
 ### News:  
