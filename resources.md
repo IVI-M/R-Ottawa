@@ -6,19 +6,31 @@
 
 ## Platforms for coding R online 
 
-a) https://rextester.com/l/r_online_compiler    
-b) https://repl.it/languages/rlang    
-c) [https://rstudio.cloud/](https://rstudio.cloud/) (Preferrable)   
+a) https://rextester.com/l/r_online_compiler,  https://repl.it/languages/rlang    (no login required)
+c) [https://rstudio.cloud/](https://rstudio.cloud/) (login required) - All in One place for learning and coding   
 
-## Blog articles
+## Teach yourself
 
-https://blog.rstudio.com/   
-https://rviews.rstudio.com/
-https://www.r-bloggers.com/
-https://www.rstudio.com/resources/
-https://towardsdatascience.com/
-https://www.kaggle.com/kernels
-https://www.analyticsvidhya.com
+Beginners:
+- https://rstudio.com/
+  - https://education.rstudio.com/learn/beginner/
+
+
+Intermediate:
+- https://r4ds.had.co.nz/  (https://jrnold.github.io/r4ds-exercise-solutions/)
+- https://stat545.com/
+- https://datasciencebox.org/
+- https://www.rstudio.com/resources/ 
+
+## Blogs
+
+- https://blog.rstudio.com/   
+- https://rviews.rstudio.com/   
+- https://www.r-bloggers.com/    
+ 
+- https://towardsdatascience.com/    
+- https://www.kaggle.com/kernels   
+- https://www.analyticsvidhya.com
     
 ## By Canada School of Public Service
 
@@ -27,7 +39,7 @@ https://www.analyticsvidhya.com
 - www.data-action-lab.com
    - https://www.data-action-lab.com/home/data-action-lab-blog/
    
-##  From RStudio
+##  More from RStudio
 
 https://github.com/rstudio/webinars
 https://github.com/rstudio/cheatsheets
@@ -62,7 +74,7 @@ rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019
 rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 
 
-## www.datacamp.com
+## www.datacamp.com 
 
 ### CAREER TRACK: R Programmer
 
@@ -72,7 +84,6 @@ rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 - https://www.datacamp.com/courses/data-privacy-and-anonymization-in-r
 - https://www.datacamp.com/courses/parallel-programming-in-r
 
-Refresher:
 
 - https://www.datacamp.com/courses/writing-efficient-r-code
 - https://www.datacamp.com/courses/object-oriented-programming-in-r-s3-and-r6
@@ -81,8 +92,7 @@ Refresher:
 ### CAREER TRACK: Data Scientist with R
 
 https://www.datacamp.com/courses/intro-to-sql-for-data-science + 2 more
-
-Refresher:   
+ 
 https://www.datacamp.com/courses/cleaning-data-in-r    
 https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse    
 
@@ -93,7 +103,7 @@ https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2
 https://www.datacamp.com/courses/introduction-to-git-for-data-science
 https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund 
 
-###  data.table
+## Learn `data.table`
 
 http://r-datatable.com
 
