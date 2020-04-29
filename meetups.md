@@ -20,11 +20,21 @@ Password: *please contact the organizer or get it from
 See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes.
 
 
-2020/04/29: (we will try to record this session, so you can follow it off-line) 
+2020/04/29: (this session was recorded and will be posted in [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
 
-- Jump start to coding in R 
-- Programming together online in rstudio.cloud (requires gmail or any other email to login)
-- Doing tutorial from rstudio together (from https://rstudio.com/)
+- Logistics of these meetings - please post questions at GCCollab or
+- Overview of R Ottawa portal resources and R101 codes
+- Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) - (requires gmail or other email to login)
+- Programming together in [https://rstudio.cloud](https://rstudio.cloud) 
+  - new project -> new R file -> copying codes from R101 into your project -> saving it -> 
+  - trying to run a line to open JHU Covid data using `data.table` package
+  - installing missing libraries (`source("000-common.R')` - added to [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) )
+  - trick for viewing the table of contents of your code
+  - commenting with `#` (CNTRL+SHIFT+C)
+- Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
+  - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
+-  Introduction to RMarkdown -> new R markdown. Converting it to html. Use of comments `<!--` - `-->` (CNTRL+SHIFT+C)
+- Note on using R in CBSA - Install instruction for CBSA employees are added in [here](install.md)
 
 
 2020/04/22: (Zoom meetings extended to GC)
