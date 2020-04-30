@@ -4,7 +4,10 @@
 
 [ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
 
+## On your home computer
 
+Google: RStudio download  
+Note: You can install it on Windows and Linux, but you cannot install it on Chromebook. Nevertherless, if all you have is chromebook, don't get discouraged, you can still program in R - on https://rstudio.cloud !
 
 ## For CBSA employees
 
