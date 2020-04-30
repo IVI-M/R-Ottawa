@@ -23,7 +23,7 @@ See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archi
 
 2020/04/29: (this session was recorded and is posted in [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr))
 
-- Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) - (requires gmail or other email to login)
+- Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) (requires gmail or other email to login)
 - Programming together in [https://rstudio.cloud](https://rstudio.cloud) 
   - new project -> new R file -> copying codes from R101 into your project -> saving it -> 
   - trying to run a line to open JHU Covid data using `data.table` package
