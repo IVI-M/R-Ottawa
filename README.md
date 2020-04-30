@@ -10,8 +10,7 @@ Pages for people interested in learning and using R in National Capital Region a
 ### News:  
 
 2020-04-28:
-- We've heard you: You want to get all the power and fun of R, but you dont know where to start (and you don't have it installed on your machine). Ok - starting this week, we'll show you how you can start learning and using R in absolutely no time and even without any software installed on your computer! All you'll need to do is to login to [https://rstudio.cloud](https://rstudio.clou) and we'll guide you through after that (Sessions will be recorded).
-- For CBSA employees, instructions on how to get RStudio installed on your GC computer are posted [here](install.md)
+- We've heard you: You want to get all the power and fun of R, but you dont know where to start (and you don't have it installed on your machine). Ok - starting this week, we'll show you how you can start learning and using R in absolutely no time and even without any software installed on your computer! All you'll need to do is to login to [https://rstudio.cloud](https://rstudio.cloud) and we'll guide you through after that (Sessions will be recorded).
 
 2020-04-08: 
 - Codes to read Canada Covid data from UoT are added in [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
