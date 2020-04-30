@@ -15,10 +15,12 @@ Join Zoom Meeting: https://us04web.zoom.us/j/337086550
 Password: *please contact the organizer or get it from
 [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
 
+---
 
 ### Agendas:
 
-See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes.
+See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes. 
+A page is also set to list all discussed data challenges: [challenges](challenges.md)
 
 
 2020/04/29: (this session was recorded and is posted in [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr))
