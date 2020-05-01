@@ -92,7 +92,7 @@ In Anaconda Prompt terminal run:
 `conda activate e2020.02.11`
 
 and then run:    
-`(e2020.02.11) C:\Users\gxd006>conda install git r-data.table r-ggplot2 r-lubridate  r-plotly -dt` 
+`conda install git r-data.table r-ggplot2 r-lubridate  r-plotly -dt` 
 
 Note the following libraries are installed by default: 
 `r-r6, magrittr, readxl , readr, stringr`
