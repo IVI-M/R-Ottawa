@@ -7,7 +7,7 @@
 ## On your home computer
 
 Google: RStudio download  
-Note: You can install it on Windows and Linux, but you cannot install it on Chromebook. Nevertherless, if all you have is chromebook, don't get discouraged, you can still program in R - on https://rstudio.cloud !
+Note: You can install it on Windows, Mac and Linux, but you cannot install it on Chromebook. Nevertherless, if all you have is Chromebook, don't get discouraged, you can still program in R - on https://rstudio.cloud !
 
 ## For CBSA employees
 
