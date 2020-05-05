@@ -23,23 +23,20 @@ See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archi
 A page is also set to list all discussed data challenges: [challenges](challenges.md)
 
 
-2020/04/29: (this session was recorded and is posted in [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr))
+2020/04/29: this session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ)
 
-- Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) (requires gmail or other email to login)
-- Programming together in [https://rstudio.cloud](https://rstudio.cloud) 
-  - new project -> new R file -> copying codes from R101 into your project -> saving it -> 
+
+1. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
+  - new project -> new R file -> copying codes from R101 into your project -> saving it -
   - trying to run a line to open JHU Covid data using `data.table` package
-    - Overview of visualizations that can be made from this dataset as used in iTrack Covid App
   - installing missing libraries (`source("000-common.R')` - added to [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) )
   - trick for viewing the table of contents of your code
   - commenting with `#` (CNTRL+SHIFT+C)
-- Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
+2. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
   - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
-- Introduction to RMarkdown -> new R markdown. Converting it to html. Use of comments `<!--` - `-->` (CNTRL+SHIFT+C)
+3. Introduction to RMarkdown -> new R markdown. Converting it to html. Use of comments `<!--` - `-->` (CNTRL+SHIFT+C)
   - iTrack Covid App is written in RMarkdown
-  
-- Note on using RStudio in CBSA
-  - Install instruction for CBSA employees are added in [here](install.md)
+
 
 
 2020/04/22: (Zoom meetings extended to GC)
