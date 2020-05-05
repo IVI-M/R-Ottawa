@@ -27,7 +27,7 @@ A page is also set to list all discussed data challenges: [challenges](challenge
 
 2020/04/29: 
 
-2020/04/29: this session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ). Transript is [here](https://github.com/IVI-M/R-Ottawa/blob/master/r101/session1-transcript.md).
+2020/04/29: this session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ). Transcript is [here](https://github.com/IVI-M/R-Ottawa/blob/master/r101/session1-transcript.md).
 
 
 1. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
