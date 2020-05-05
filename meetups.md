@@ -8,12 +8,15 @@
 ### Dial-in details
 
 
-Topic: Lunches with Data Challenges    
+Topic: "Learning R together" (Building Covid App from the scratch).   
 Lead by: Dmitry Gorodnichy      
 Time: Every Wednesday, starting March 18 1,2020 at 12:20-12:55 AM Eastern Time (US and Canada)    
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550     
-Password: *please contact the organizer or get it from
-[GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
+<!-- Password: 
+*please contact the organizer or get it from
+[GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)* -->
+
+[YouTube channel](https://www.youtube.com/playlist?list=PLUogPW3t8g0RFvDGyKo1murnQUaSJxEPl)  (sessions are recorded and posted there with transriptions)
 
 ---
 
@@ -22,8 +25,9 @@ Password: *please contact the organizer or get it from
 See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes. 
 A page is also set to list all discussed data challenges: [challenges](challenges.md)
 
+2020/04/29: 
 
-2020/04/29: this session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ)
+2020/04/29: this session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ). Transript is [here](https://github.com/IVI-M/R-Ottawa/blob/master/r101/session1-transcript.md).
 
 
 1. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
