@@ -4,38 +4,41 @@ Transcript for session
 
 6:30   - overview of pages that I'll be using in these Wed sessions
  - This R Ottawa portal
-    - /r101 folder with R (where I'll be puttingvcodes and  session transcripts
- - rstudio.cloud(where will be coding
+    - /r101 folder with R (where I'll be putting the codes and  session transcripts)
+ - rstudio.cloud (where will be coding)
  
  10:00    - showing how to start Tutorials that are included in rstudio.cloud
-  - we start the very first Visualization tutorial which creates a graph of `mpg` miles per gallon dataset that is included in R
-  - CTR
+  - we start the very first Visualization tutorial,  which creates a graph of `mpg` miles per gallon dataset that is included in R
+
   
 14:00 -  Creating your own first project (e.g. to visualize Covid data)
-  - note this exactly the same RStudio that I have on my local machine
+  - note this is exactly the same RStudio that I have on my local machine
   - create New -> R script
   
-15:20 -  Copyng a line from `readCovidUS.R`  (which reads an  fread = .csv` file from JHU ) into my R Script
+15:20 -  Copyng a line from `readCovidJHU.R`  (which reads US .csv data from JHU using `fread()`  ) into my R Script
   
 - Press CNTR + Enter to run it
 - Error in fread - missing libraries
   
-16:00 - copying libraries from `readCovidCa.R` (which we discussed in previous sessions) into my R Script
+16:00 - copying libraries from `readCovidCanada.R` (which we discussed in previous sessions) into my R Script
  
 18:00 - installing missing libraries
 
-19:00  - showing my RStudio [ My setup is the same, but I used Dark colour Scheme]
+19:00  - showing my RStudio on my home machine [ My setup is the same, but I used Dark colour Scheme]
 - Running`sessionInfo() 3.6.1
 - showing the content of my folder
-- Saving our R script as `01-read.R`
 
-21:00 - yellow line on top shows all packages that are listed in the code and that are not installed yet.
+20:00 0 going back to cloud RStudio
+- observing what arefiles are there
+- Saving our R script as `01-read.R`. Now we have a new file there
+
+21:00 - yellow line on top shows all packages that are listed in the code and that are not installed yet. You can click there to install them all. [ I don't do it beause it will take long time, please do it on you own] 
 
 22:30  - going  through the functionalities of the iTrack Covid app
 - It all started with exactly the same line that we pasted today into our script
-- What I do in my code: I read current time , time when dataset was updated and show them here 
+- What I do in my code: I read current time ,then read time when dataset was updated and show them here .
 
-25:00 - - Talking about data challeges:
+25:00 - Talking about data challeges:
 - I compute speed and acceleration 
 (which are Derivative of totals and derivative of speed, derivative being the difference in adjacent values)  
 - however note that data are not smooth! It jumps back and forth, sometime not available (NA), sometime negative.
@@ -57,10 +60,10 @@ In fact, I used all the time for writing my text
 
 31:00 - Kniting a document
 
-- You can comment out the part that you dont want to be shown by Pressing CNTR+SHIFT+C 
-[ Oops. apparently this short-cup does not work in rstudio.cloud]. Use `<!--  -  -->`
+- You can comment out the part that you dont want to be shown by Pressing CNTR+SHIFT+C .
+[ Oops. apparently this short-cut does not work in rstudio.cloud]. Use `<!--  -  -->`
 
-- All my applications (like itrack Covid) are RMarkdown
+- All my applications (like this Ttrack Covid) are RMarkdown
 - Showing how you make a header in RMarkdown
 
 33:30  - trick to show the Table of Content
