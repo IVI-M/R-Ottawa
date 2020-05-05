@@ -9,6 +9,10 @@ Pages for people interested in learning and using R in National Capital Region a
 
 ### News:  
 
+2020-05-03:
+- YouTube channel is created: ['Learning R together" (Building Covid App from the scratch)](https://www.youtube.com/playlist?list=PLUogPW3t8g0RFvDGyKo1murnQUaSJxEPl). The recording of our first sessin is there. The session transcipts are posted in  [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
+
+
 2020-04-28:
 - We've heard you: You want to get all the power and fun of R, but you dont know where to start (and you don't have it installed on your machine). Ok - starting this week, we'll show you how you can start learning and using R in absolutely no time and even without any software installed on your computer! All you'll need to do is to login to [https://rstudio.cloud](https://rstudio.cloud) and we'll guide you through after that (Sessions will be recorded).
 
