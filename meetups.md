@@ -27,7 +27,7 @@ A page is also set to list all discussed data challenges: [challenges](challenge
 
 2020/05/06: 
 
-- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize in a number of ways. The files that we have created last time in rstudio.cloud are copied to [/r101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) )  [/r101/00-read.R]() and [/r101/00-report.Rmd](). 
+- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize in a number of ways. The files that we have created last time in rstudio.cloud are copied to [/r101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) :  [/r101/00-read.R]() and [/r101/00-report.Rmd](). 
 
 2020/04/29: this first session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ). Transcript is [here](https://github.com/IVI-M/R-Ottawa/blob/master/r101/session1-transcript.md).
 
