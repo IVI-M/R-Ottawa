@@ -10,13 +10,11 @@
 
 Topic: "Learning R together" (Building Covid App from the scratch).   
 Lead by: Dmitry Gorodnichy      
-Time: Every Wednesday, starting March 18 1,2020 at 12:20-12:55 AM Eastern Time (US and Canada)    
+Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 AM Ottawa Time (Eastern US and Canada)    
 Join Zoom Meeting: https://us04web.zoom.us/j/337086550     
 <!-- Password: 
 *please contact the organizer or get it from
 [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)* -->
-
-[YouTube channel](https://www.youtube.com/playlist?list=PLUogPW3t8g0RFvDGyKo1murnQUaSJxEPl)  (sessions are recorded and posted there with transriptions)
 
 ---
 
@@ -35,10 +33,11 @@ See also [challenges](challenges.md) for list of various  discussed data challen
 
 2020/04/29:  First recorded session on R101
 
-1. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
-  - new project -> new R file -> copying codes from R101 into your project -> saving it -
-2. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
+
+1. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
   - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
+2. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
+  - new project -> new R file -> copying codes from R101 into your project -> saving it -
 3. Introduction to RMarkdown -> new R markdown. Converting it to html. 
   - iTrack Covid App is written in RMarkdown
 
