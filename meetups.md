@@ -20,27 +20,27 @@ Join Zoom Meeting: https://us04web.zoom.us/j/337086550
 
 ---
 
-### Agendas:
+
+Note: All discussions related to the R101 sessions have been moved to [R101](101.md) page.
 
 See also [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for archived discussed codes. 
 A page is also set to list all discussed data challenges: [challenges](challenges.md)
 
+### Agendas:
+
+
+
 2020/05/06: 
 
-- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize in a number of ways. The files that we have created last time in rstudio.cloud are copied to [/r101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) :  [/r101/00-read.R]() and [/r101/00-report.Rmd](). 
+- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize in a number of ways. The files that we have created last time in rstudio.cloud are copied to [/r101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) :  [/r101/00-read.R]() 
 
 2020/04/29: this first session was recorded and can be viewed [here](https://youtu.be/d_EC39tIWMQ). Transcript is [here](https://github.com/IVI-M/R-Ottawa/blob/master/r101/session1-transcript.md).
 
-
 1. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
   - new project -> new R file -> copying codes from R101 into your project -> saving it -
-  - trying to run a line to open JHU Covid data using `data.table` package
-  - installing missing libraries (`source("000-common.R')` - added to [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) )
-  - trick for viewing the table of contents of your code
-  - commenting with `#` (CNTRL+SHIFT+C)
 2. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
   - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
-3. Introduction to RMarkdown -> new R markdown. Converting it to html. Use of comments `<!--` - `-->` (CNTRL+SHIFT+C)
+3. Introduction to RMarkdown -> new R markdown. Converting it to html. 
   - iTrack Covid App is written in RMarkdown
 
 
