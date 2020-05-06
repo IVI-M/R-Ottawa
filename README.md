@@ -2,7 +2,7 @@
 
 Pages for people interested in learning and using R in National Capital Region and elsewhere
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101 ](101.md).
+[ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ Community](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101](101.md).
 
 
 
@@ -10,7 +10,7 @@ Pages for people interested in learning and using R in National Capital Region a
 ### News:  
 
 2020-05-03:
-- YouTube channel created: ['Learning R together" (Building  Data Science Apps from the scratch - together)](https://www.youtube.com/playlist?list=PLUogPW3t8g0RFvDGyKo1murnQUaSJxEPl). If you missed a session, you can watch it there. The session transcripts are posted in  [ R101 ](101.md).
+- YouTube channel created: ['Learning R together" (Building  Data Science Apps from the scratch)](https://www.youtube.com/playlist?list=PLUogPW3t8g0RFvDGyKo1murnQUaSJxEPl). If you missed a session, you can watch it there. The session transcripts are posted in  [ R101](101.md).
 
 
 2020-04-28:
