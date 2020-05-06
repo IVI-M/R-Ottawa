@@ -2,7 +2,7 @@
 # Resources
 
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101)
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101 ](101.md)
 
 ## Platforms for coding R online 
 
