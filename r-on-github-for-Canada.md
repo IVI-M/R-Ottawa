@@ -29,7 +29,7 @@ https://github.com/bcgov/canwqdata
 
 https://github.com/ropensci/weathercan
 
-### Related to Canadian Elections, Democracy and Electroral reform
+### Related to Canadian Elections, Democracy and Electoral reform
 
 https://github.com/thisismactan/Canada-2019
 
