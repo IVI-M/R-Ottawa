@@ -8,7 +8,7 @@
 ### Dial-in details
 
 
-Topic: "Learning R together" (Building Covid App from the scratch).   
+Topic: "R101: Learning R together" (Building Covid App from the scratch).   
 Lead by: Dmitry Gorodnichy      
 Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 AM Ottawa Time (Eastern US and Canada)    
 Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)     
@@ -23,23 +23,22 @@ Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us
 
 Note: All discussions related to the R101 "Learning R together" (Lunch and Learn) sessions have been moved to [R101](101.md) page.
 
-See also [challenges](challenges.md) for list of various  discussed data challenges.
+See also:
+
+- List of various  discussed data [challenges](challenges.md) 
+- Collection of open [R codes repositories in GitHub related to Ottawa and Canada](r-on-github-for-Canada.md)
 
 
+2020/05/06: Second recorded session on R101
 
-2020/05/06: Second session on R101
-
-- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize in a number of ways. The files that we have created last time in rstudio.cloud are copied to [/r101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) :  [/r101/00-read.R]() 
+- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize it in a number of ways. 
 
 2020/04/29:  First recorded session on R101
 
 
-1. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Reources -> Education)
-  - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
-2. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud) 
-  - new project -> new R file -> copying codes from R101 into your project -> saving it -
-3. Introduction to RMarkdown -> new R markdown. Converting it to html. 
-  - iTrack Covid App is written in RMarkdown
+1. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Resources -> Education)   - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
+2. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud)  -> new project -> new R Script -> copying codes from R101 into your project -> saving it
+3. Introduction to R Markdown 
 
 
 
@@ -67,7 +66,7 @@ See also [challenges](challenges.md) for list of various  discussed data challen
 - Where do we go from here
 
 
-###  List of topics available for discussion
+###  Topics available for discussion
 
 - [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/):   
 Interactive Web App to better visualize and predict the spread of Covid19 pandemic [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
@@ -95,12 +94,20 @@ Predicting and optimizing Border Wait Time using Artificial Intelligence  [(Link
   
 - [https://itrack.shinyapps.io/PSES/](https://itrack.shinyapps.io/PSES/):   
 Improving Public Service performance using Public Service Employee Surveys and Data Science [(LinkedIn article](https://www.linkedin.com/pulse/analyzing-improving-public-service-performance-using-data-gorodnichy/))
-  - Compare to: PSES Power BI Visualization Tool from [https://hranalytics-analytiquerh.tbs-sct.gc.ca](https://hranalytics-analytiquerh.tbs-sct.gc.ca)
+  - **Compare to**: PSES Power BI Visualization Tool from [https://hranalytics-analytiquerh.tbs-sct.gc.ca](https://hranalytics-analytiquerh.tbs-sct.gc.ca)
   - graphics and annotations with `ggplot2`
   - nested menus in `shiny`
-  - `flexdahboard` layouts and options
+  - `flexdashboard` layouts and options
   - data aggregation using `data.table`
   - automated report generation using `knitr` and `glue`
+
+
+- **Automated Stress/Lie Detection:** Coding and research techniques explored in joint projects with [San Diego State University and University of Arizona](https://newscenter.sdsu.edu/sdsu_newscenter/news_story.aspx?sid=76505), and  [University of Ottawa](https://www.data-action-lab.com/2020/02/27/research-partnership-started-between-uottawa-and-cbsa-in-the-field-of-artificial-intelligence/) 
+  - analyzing factors: correlations - library(corrgram),   library(corrplot), two-sample tests, and mixed-effect analysis:  lmer, glmer, nlmer, glm
+  - complex modeling / machine learning / pattern recognition / neural networks using library(caret) (inc. rpart, randomForest
+  - false positive, false negatives, precisions, error trade-off and other performance evaluations tricks: library(PRROC)
+  - cool visualizations using: library(ggrepel); library(ggpubr);   library("gridExtra"); library(png)
+  - library(eyetrackingR)
 
 
 Check  [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for samples of discussed R codes.   
