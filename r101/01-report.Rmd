@@ -1,0 +1,63 @@
+---
+title: "My first App"
+author: "Me The Brave"
+date: '2020-05-20'
+output:
+  html_document:
+    df_print: paged
+  flexdashboard::flex_dashboard:
+    vertical_layout: fill
+---
+
+## Intro 
+
+Bla-bla
+
+```{r readCov, include=F}
+source("01-read.R")
+
+colsGeo <- c("country",   "state",       "city")
+colsCases <- c("confirmed", "deaths", "recovered")
+
+dtGeo <- readGeo()
+
+dtGeo[, (colsGeo):=lapply(.SD, iconv, to="ASCII//TRANSLIT"), .SDcols=colsGeo]
+dtGeo[ , region:=paste0( country, "-", state,  ": ",  city)]
+
+dtUS <- readCovidUS() 
+
+dateMax<- dtUS$date %>% max %>% ymd; dateMax
+
+
+```
+
+## Case study: State - New York
+
+Bla-bla
+
+### Basic stats
+
+Bla-bla
+
+```{r}
+  dt <- dtUS[state == 'New York']
+  
+  dt <- dtGeo [dt, on=c("country" , "state" , "city")]
+  
+  dt %>% summary
+```  
+  
+
+## Plot
+
+Bla-bla
+
+```{r}
+  dt <- dtUS[state == 'New York']
+  
+  dt[city == 'New York'][ date > dateMax - 30] %>% 
+    ggplot() + 
+    geom_line(aes(date, confirmed), col="orange") +
+    geom_line(aes(date, deaths), col="red") 
+  
+```  
