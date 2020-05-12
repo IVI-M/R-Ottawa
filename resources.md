@@ -13,7 +13,9 @@ c) [https://rstudio.cloud/](https://rstudio.cloud/) (login required) - All in On
 
 Beginners:
 - https://rstudio.com/
-  - https://education.rstudio.com/learn/beginner/
+  - R basics: https://education.rstudio.com/learn/beginner/
+  - Dashboard in R: https://rmarkdown.rstudio.com/flexdashboard/
+  - data.table: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
 
 Intermediate:
 - https://r4ds.had.co.nz/  (https://jrnold.github.io/r4ds-exercise-solutions/)
@@ -67,9 +69,8 @@ https://resources.rstudio.com/webinars/reproducibility-in-production - September
 
 ### rstudio::conf
 
-rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019
-
-rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
+rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019    
+rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)   
 
 
 ## www.datacamp.com 
@@ -103,11 +104,9 @@ https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemun
 
 ## Learn `data.table`
 
-http://r-datatable.com
+http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)     
+https://www.datacamp.com/courses/time-series-with-datatable-in-r    
+https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable      
 
-https://www.datacamp.com/courses/time-series-with-datatable-in-r
-https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable
-
-https://github.com/Rdatatable/data.table/wiki/Articles
-
+https://github.com/Rdatatable/data.table/wiki/Articles     
 https://rpubs.com/josemz/SDbf - Making .SD your best friend
