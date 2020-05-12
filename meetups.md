@@ -10,8 +10,15 @@
 
 Topic: "R101: Learning R together" (Building Covid App from the scratch).   
 Lead by: Dmitry Gorodnichy      
-Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 AM Ottawa Time (Eastern US and Canada)    
-Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)     
+Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 Ottawa Time (Eastern US and Canada)    
+<!-- Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)    -->
+
+Join Zoom Meeting    
+https://us04web.zoom.us/j/337086550?pwd=c202L3NhVlJyQVlIYTE5WTB4ZktQUT09   
+
+Meeting ID: 337 086 550     
+Password: 19350706    
+
 <!-- Password: 
 *please contact the organizer or get it from
 [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)* -->
@@ -19,11 +26,8 @@ Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us
 ---
 
 
-### Agendas:
-
-
 Since 2020/04/22 these meetings have become "Lunch and Learn" sessions (R101 "Learning R together"). 
-Transcripts, topics, videos of these sessions  are archived in [R101](101.md) page.
+Agendas, transcripts, and videos of these sessions  are archived in [R101](101.md) page.
 
 
 See also:
@@ -35,7 +39,7 @@ See also:
 ---
 
 
-###  Topics available for discussion
+####  Topics available for discussion
 
 - [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/):   
 Interactive Web App to better visualize and predict the spread of Covid19 pandemic [(LinkedIn article](https://www.linkedin.com/pulse/interactive-web-app-visualize-predict-spread-covid19-gorodnichy/))
