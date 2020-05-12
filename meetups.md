@@ -2,7 +2,7 @@
 
 # Lunches with Data Challenges - Weekly meet-ups
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101 ](101.md)
+[ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ Community](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101](101.md)
 
 
 ### Dial-in details
@@ -21,49 +21,18 @@ Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us
 
 ### Agendas:
 
-Note: All discussions related to the R101 "Learning R together" (Lunch and Learn) sessions have been moved to [R101](101.md) page.
+
+Since 2020/04/22 these meetings have become "Lunch and Learn" sessions (R101 "Learning R together"). 
+Transcripts, topics, videos of these sessions  are archived in [R101](101.md) page.
+
 
 See also:
 
-- List of various  discussed data [challenges](challenges.md) 
-- Collection of open [R codes repositories in GitHub related to Ottawa and Canada](r-on-github-for-Canada.md)
+- [List of various discussed data challenges](challenges.md) 
+- [Collection of open R codes repositories in GitHub related to Ottawa and Canada](r-on-github-for-Canada.md)
+- [ Resources](resources.md): for many other resources in R
 
-
-2020/05/06: Second recorded session on R101
-
-- In our second session, we will continue from where we left: we will open the .csv file from JHU and visualize it in a number of ways. 
-
-2020/04/29:  First recorded session on R101
-
-
-1. Doing tutorial from [https://rstudio.cloud](https://rstudio.cloud) together (more at https://rstudio.com/ -> Resources -> Education)   - Left menu -> Primers -> The Basics -> Visualization Basic, using built-in `mpg` dataset
-2. Jump start to coding in R from [https://rstudio.cloud](https://rstudio.cloud)  -> new project -> new R Script -> copying codes from R101 into your project -> saving it
-3. Introduction to R Markdown 
-
-
-
-2020/04/22: Zoom meetings extended to GC
-
-- Introductions to wider GC community
-- Overview of R Ottawa resources, apps and topics of interest
-- Walk through the iTrack Covid App, and associated data processing challenges (e.g. dealing with missing/negative entries)
-- Code to read data from JHU database - added
-
-2020/04/15:  Accessing Covid data for Canada
-
-- Problem with direct access to Covid .csv data from Stats Canada site. 
-- Code to read data from UofT google doc - added
-
-2020/04/01:  Focus shifted to Covid data
-
-- Since the break-up of covid pandemic, we discuss covid data related challenges and solutions (how to read it, visualize it, make good use of it using R and AI). 
-- Public datasets on Covid - in Canada and International
-
-
-2020/03/24: Meet-ups go Zoom
-
-- What's up with our work and Community  with new normal -  in CBSA and elsewhere
-- Where do we go from here
+---
 
 
 ###  Topics available for discussion
