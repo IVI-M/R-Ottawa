@@ -13,9 +13,8 @@ Lead by: Dmitry Gorodnichy
 Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 Ottawa Time (Eastern US and Canada)    
 <!-- Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)    -->
 
-Join Zoom Meeting    
-https://us04web.zoom.us/j/337086550?pwd=c202L3NhVlJyQVlIYTE5WTB4ZktQUT09   
-
+Join Zoom Meeting:   [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550?pwd=c202L3NhVlJyQVlIYTE5WTB4ZktQUT09) 
+   
 Meeting ID: 337 086 550     
 Password: 19350706    
 
