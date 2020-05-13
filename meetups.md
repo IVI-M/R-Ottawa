@@ -8,9 +8,9 @@
 ### Dial-in details
 
 
-Topic: "R101: Learning R together" (Building Covid App from the scratch).   
-Lead by: Dmitry Gorodnichy      
-Time: Every Wednesday (starting March 18, 2020) at 12:20-12:55 Ottawa Time (Eastern US and Canada)    
+Topic: "Lunch and Learn: CMPUT101 using R" (Building Data Science App from the scratch - together).   
+Lead by: Dmitry Gorodnichy  
+Time: Every Wednesday and Friday at 12:20-12:55 Ottawa Time (Eastern US and Canada)    
 <!-- Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)    -->
 
 Join Zoom Meeting:   [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550?pwd=c202L3NhVlJyQVlIYTE5WTB4ZktQUT09) 
@@ -25,8 +25,8 @@ Password: 19350706
 ---
 
 
-Since 2020/04/22 these meetings have become "Lunch and Learn" sessions (R101 "Learning R together"). 
-Agendas, transcripts, and videos of these sessions  are archived in [R101](101.md) page.
+Since 2020/04/22 "Lunches with Data Challenges" meetings have become "Lunch and Learn: CMPUT101 using R" sessions.   
+Please go [R101](101.md) page for all information related to these sessions.
 
 
 See also:
