@@ -10,7 +10,7 @@ Pages for people interested in learning and using R in National Capital Region a
 ### News:  
 
 2020-05-13:
--  35 mins a week seems not enough... Following the requests, we'll add anothe R101 "Lunch and Learn" session on Fridays, the same time 
+-  35 mins a week seems not enough... Following the requests, we'll add another R101 "Lunch and Learn" session on Fridays, the same time.
 - Also following your suigestions, homework will be added at each session.
 - Thank you for all your questions and ideas! We'll do my best to respond to *all* of them. 
 
