@@ -42,7 +42,7 @@ Talk to any of us, will show you how.
  
 
 Step 1. Please check if you can read access to the following folder (i.e. click in the link):
-\\\\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io
+`\\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io`
 
 
 IF YOU DON'T , STOP RIGHT HERE  - and let me know. Your name will need to be submitted to grant you access to this folder
@@ -51,7 +51,7 @@ If you do, then proceed to next step:
 
  
 
-Step 2. Copy `Anaconda3-5.1.0-Windows-x86_64.exe`   from i: drive (which is `\\SH12CFFP0001\install`) to your local  user account  (which is `C:\Users\<6 Digit User>\`), and Run it from there.
+Step 2. Copy `Anaconda3-5.1.0-Windows-x86_64.exe` in `Anaconda3_510` folder  from i: drive (which is `\\SH12CFFP0001\install`) to your local  user account  (which is `C:\Users\<6 Digit User>\`), and Run it from there.
 
 
 Destination Folder: `C:\Users\<6 Digit User>\Anaconda3\` is displayed
