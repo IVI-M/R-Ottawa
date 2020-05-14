@@ -42,7 +42,7 @@ Talk to any of us, will show you how.
  
 
 Step 1. Please check if you can read access to the following folder (i.e. click in the link):
-\\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io
+\\\\omega.dce-eir.net\natdfs\Services\Central_storage\CBSA\OGDA\Repos\repo.continuum.io
 
 
 IF YOU DON'T , STOP RIGHT HERE  - and let me know. Your name will need to be submitted to grant you access to this folder
