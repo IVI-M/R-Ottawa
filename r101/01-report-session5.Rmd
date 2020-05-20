@@ -1,0 +1,95 @@
+---
+title: "COVID-19 in US"
+subtitle: " Situational Analysis"
+author: "Prepared by: [R Ottawa community](https://ivi-m.github.io/R-Ottawa/)"
+date: "Last updated: `r Sys.time()` "
+output:
+  html_document:
+    df_print: paged
+  # flexdashboard::flex_dashboard:
+  #   orientation: columns
+  #   vertical_layout: fill
+---
+
+# Introduction
+
+This report is generated automatically from the open COVID-19 data provided by JHU.
+
+```{r readCov, include=F}
+knitr::opts_chunk$set(echo = FALSE)
+source("01-read.R")
+
+dtGeo <- readGeo()
+colsGeo <- c("country",   "state",       "city")
+dtUS <- readCovidUS() 
+dateMax<- dtUS$date %>% max %>% ymd; dateMax
+
+
+```
+
+# Case studies
+
+## State - New York
+
+On `r dateMax`, the situation in  New York is the following:
+
+### Summary
+
+Table below shows the summary stats:
+
+```{r}
+  dt <- dtUS[state == 'New York']
+  # dt <- dtUS
+  
+  dtAll <- dtGeo [dt, on=c("country" , "state" , "city")]
+  
+  dtAll %>% summary
+```  
+  
+
+### Dynamics
+
+Graph below shows the dynamics in the last 30 days
+
+```{r}
+# dt <- dtUS[state == 'New York']
+
+dtAll[ date > dateMax - 30] %>% 
+  ggplot() + 
+  facet_wrap(city ~ .) +
+  geom_line(aes(date, confirmed), col="orange") +
+  geom_line(aes(date, deaths), col="red") 
+
+```  
+
+
+
+# Generate report
+
+This section provides gaphs for all states
+
+
+## Analysis by State
+
+```{r results='asis', fig.width=10, fig.height=2, fig.align='center'}
+
+for ( state in dtAll$state %>% unique ) {
+
+  cat( paste0("## State: ", state) )
+ 
+  g <- dtAll[ date > dateMax - 30] %>% 
+    ggplot() + 
+    facet_wrap(city ~ .) +
+    geom_line(aes(date, confirmed), col="orange") +
+    geom_line(aes(date, deaths), col="red") +
+    
+    labs(
+      title= paste0("State: ", state),
+      subtitle=paste0("Date: ", dateMax)
+    )
+  
+  print(g)
+}
+
+```
+
