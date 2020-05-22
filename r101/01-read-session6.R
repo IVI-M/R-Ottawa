@@ -1,0 +1,254 @@
+# R101
+# 01-read.R
+# https://github.com/IVI-M/R-Ottawa/new/master/r101
+# Last updated: 22 May 2020
+
+# 0. General libraries and functions ----
+
+# print(sessionInfo())
+# source("000-common.R")
+
+if (T) { 
+  options(scipen=999); #remove scientific notation
+  library(data.table)
+  options(datatable.print.class=TRUE)
+  library(magrittr)
+  library(lubridate)
+  library(ggplot2)
+}
+
+STR_TOTAL <- "...COMBINED..."
+
+# 0.1 My functions ----
+
+covid.reduceToTopNCitiesToday <- function(dt0, N=5) {
+  
+  dateMax <- dt0$date %>% max
+  dt <- dt0[date==dateMax][order(-confirmed)][1: min(N, nrow(dt))];
+  dt
+  topNcities <- dt$city ; 
+  topNcities
+  dt <- dt0[ city %in% topNcities];
+  dt
+}
+
+
+readGeo <- function() {
+  dt <- fread("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/UID_ISO_FIPS_LookUp_Table.csv") 
+  dt[c(1,3)]
+  dt[c(1:4)]
+  dt[.N]
+  dt[c(1:2, (.N-1):.N), 1:3]
+  cols <- c("UID"  , "iso2" ,   "iso3"  ,   "code3", "FIPS", "Combined_Key")
+  dt [ ,(cols):=NULL] ;  
+  dt %>% setnames(c("city", "state", "country", "lat", "lng", "population")) 
+  
+  dt
+  dt[ state == "", state:=STR_TOTAL]
+  dt[ city == "", city:=STR_TOTAL]
+  
+  setcolorder(dt, c( "country" , "state" , "city" , "lat", "lng" , "population"  ) )
+  dt
+}
+
+readCovidUS <- function() {
+  # read confirmed data
+  dt <- fread("https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv", stringsAsFactors = T )
+  dt %>% names
+  dt[.N]
+  dt[.N, 1:12]
+  dt[c(1:2, (.N-1):.N), 1:12]
+  cols <- c ( 1:5, 8:11 ) ;
+  dt [ ,(cols):=NULL] ;   
+  dtUSc <- dt %>% melt(id=1:2);   
+  dtUSc[c(1,.N)]
+  setnames(dtUSc, c("city", "state", "date", "confirmed"));dtUSc [c(1,.N)]
+  setkeyv (dtUSc, c("date", "state", "city") )
+  dtUSc
+  
+  # read deaths data  
+  dt <- fread("https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv", stringsAsFactors = T )
+  # ...  
+  cols <- c ( 1:5, 8:12 ) ;
+  dt [ ,(cols):=NULL] ;   
+  dtUSd <- dt %>% melt(id=1:2);   
+  setnames(dtUSd, c("city", "state", "date", "deaths"))
+  setkeyv (dtUSd, c("date", "state", "city") )
+  dtUSd
+  # merge two data sets;  
+  
+  dtUS <- merge(dtUSc, dtUSd, by =  c("city", "state", "date") )
+  dtUS
+  # OR
+  #  dtUS <- dtUSc [dtUSd]
+  
+  dtUS [, date := as.character(date) %>% mdy ]
+  
+  dtUS$country <- "US"
+  dtUS$recovered <- NA
+  dtUS[ city == "", city:=STR_TOTAL]
+  setcolorder(dtUS, c("date", "country", "state", "city", "confirmed", "deaths", "recovered" ))
+  
+  
+  dtUS %>% summary
+  
+  dateMax <- dtUS$date %>% max()
+  dtUS$state %>% unique
+  dtUS [state=='New York']$city %>% unique()
+  
+  dtUS[date==dateMax]
+  dtUS[confirmed > 10000]
+  dtUS[confirmed > 100000 & state=='New York']
+
+  
+  return (dtUS)
+}
+
+
+
+
+TEST_ME <- function() {
+  
+  #  1.0 Reading data   ----
+  
+  dtGeo <- readGeo()
+  dtGeo
+  dtGeo[city == 'New York'] # No such city???
+  dtGeo[state == 'New York'] # Lets find it
+  dtGeo[state == 'New York']$city
+  
+  # lets fix it !
+  dtGeo[city == 'New York City', city:='New York']
+  
+  dtUS <- readCovidUS()
+  dtUS
+  dateMax <- dtUS$date %>% max; dateMax
+  
+  dtUS$recovered <- NULL
+  
+  #  1.1 New-York example   ----
+  
+  dtUS[state == 'New York']$city %>% unique
+
+  city <- "Suffolk"
+  city <- "New York"
+  
+  dtUS[city == 'Suffolk'][date==dateMax]
+  dtUS[city == 'New York'][date==dateMax]
+  dtUS[state == 'New York' & date==dateMax]
+  
+  # . Find top 3  cities in New York ----
+  
+ 
+  dt0 <-  dtUS[state == 'New York']
+  dt0$city %>% unique() %>% length
+  
+  dt <- dt0[date==dateMax][order(-confirmed)][1:3];
+  dt
+  topNcities <- dt$city ; 
+  topNcities
+  dt <- dt0[ city %in% topNcities];
+  dt
+  
+  # copied to covid.reduceToTopNCitiesToday <- function(dt0, N=5) 
+
+  # Now the same using the function
+  dt0 <- dt0 %>% covid.reduceToTopNCitiesToday()
+  dt0$city %>% unique()
+  dt <- dt0
+  
+
+  #  1.2 Merging Geo with Stats data   ----
+  
+  dtAll <- dtGeo [dt, on=c("country" , "state" , "city")];dtAll
+
+  # 2. Plotting
+  
+  g <- dtAll[city == 'New York'][ date > dateMax - 30] %>% 
+    ggplot() + 
+    geom_line(aes(date, confirmed), col="orange") +
+    geom_line(aes(date, deaths), col="red") 
+  g
+  
+  dtAll[ date > dateMax - 30] %>% 
+    ggplot() + 
+    #facet_wrap( city ~ .) +
+    facet_wrap( reorder(city, lng) ~ .) +
+   # facet_wrap( reorder(city, lng) ~ ., scales="free") +
+    # facet_wrap( reorder(city, state) ~ .) +
+    geom_line(aes(date, confirmed), col="orange") +
+    geom_line(aes(date, deaths), col="red") +
+    labs(
+      title= paste0("Infected per day"),
+      subtitle=paste0("State: ", 'New York', ". Date: ", dateMax),  
+      caption=paste0(
+        "Cities are sorted by location\n", 
+        "Data source: Johns Hopkins University U.S. Coronavirus database\n", 
+        "Generated by R Ottawa"
+      )
+    )
+  
+  
+  ggsave("New York.png")
+  
+  # 1.3 Compute some stats: Totals
+  
+  
+  dtAll[, sum(confirmed),  by=city][]
+  dtAll[, sum(deaths),  by=city][]
+  
+  dtAll[ date > dateMax - 3][, mean(confirmed),  by=city][]
+  dtAll[ date > dateMax - 3][, mean(deaths),  by=city][]
+  
+  # Better way
+  
+  cols <- c("confirmed", "deaths")
+  colsTotal <- paste0(cols, "Total"); colsSum
+  colsSpeed <- paste0(cols, "Speed"); colsSpeed
+
+  dtAll[, lapply(.SD, sum), .SDcols=cols]
+  
+  my.filter <- function(vector) {
+   # ( vector[length(vector)] + vector[length(vector)-1] ) / 2
+    ( vector[length(vector)] + vector[max(1, length(vector)-1) ] ) / 2
+  }
+  my.filter (1:10)
+  
+  dtAll[, lapply(.SD, my.filter), .SDcols=cols]
+  
+
+  # . By city ----
+  
+  dtAll[, lapply(.SD, sum), by=city, .SDcols=cols] 
+  
+  dt2 <- dtAll[, lapply(.SD, sum), by=city, .SDcols=cols] %>% setnames(cols, colsTotal)
+  
+  dt3 <- dtAll[, lapply(.SD, my.filter), by=city, .SDcols=cols] %>% setnames(cols, colsSpeed)
+  
+  dt2[dt3, on="city"]
+  
+
+  # .. Total for each day so we can plot it ----
+  
+  dtAll[, (colsSum):= lapply(.SD, cumsum), .SDcols=cols]
+  
+  dtAll[ date > dateMax - 30] %>% 
+    ggplot() + 
+    #facet_wrap( city ~ .) +
+    facet_wrap( reorder(city, lng) ~ .) +
+    # facet_wrap( reorder(city, lng) ~ ., scales="free") +
+    # facet_wrap( reorder(city, state) ~ .) +
+    geom_line(aes(date, confirmedTotal), col="orange") +
+    geom_line(aes(date, deathsTotal), col="red") +
+    labs(
+      title= paste0("Total infected"),
+      subtitle=paste0("State: ", 'New York', ". Date: ", dateMax), 
+      caption=paste0(
+        "Cities are sorted by location\n", 
+        "Data source: Johns Hopkins University U.S. Coronavirus database\n", 
+        "Generated by R Ottawa"
+      )
+    )
+  
+
+}
