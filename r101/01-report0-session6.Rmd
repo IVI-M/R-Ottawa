@@ -7,6 +7,7 @@ output:
   html_document:
     df_print: paged
     toc: true
+    toc_depth: 4
     toc_float: true
     collapsed: true
   # flexdashboard::flex_dashboard:
@@ -69,9 +70,10 @@ for ( state in dtUS$state %>% unique ) {
   
   
   dt <- dt0[, lapply(.SD, sum), by=city, .SDcols=cols] 
-  dt
+  dt %>%  print
   
-  DT::datatable(dt) %>% print
+  # DT::datatable(dt) %>% print
+  knitr::kable(dt) %>% print
   
   dt0 <- dt0 %>% covid.reduceToTopNCitiesToday(12)
   
@@ -80,7 +82,7 @@ for ( state in dtUS$state %>% unique ) {
     #facet_wrap( city ~ .) +
     # facet_wrap( reorder(city, lng) ~ .) +
     # facet_wrap( reorder(city, lng) ~ ., scales="free") +
-    facet_wrap( reorder(city, -confirmed) ~ .) +
+    facet_wrap( reorder(city, -confirmed, scales="free") ~ .) +
     # facet_wrap( reorder(city, state) ~ .) +
     geom_line(aes(date, confirmed), col="orange") +
     geom_line(aes(date, deaths), col="red") +
