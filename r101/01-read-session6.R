@@ -1,3 +1,4 @@
+
 # R101
 # 01-read.R
 # https://github.com/IVI-M/R-Ottawa/new/master/r101
@@ -104,7 +105,9 @@ readCovidUS <- function() {
   return (dtUS)
 }
 
-
+readAll <- function() {
+  
+}
 
 
 TEST_ME <- function() {
@@ -173,8 +176,8 @@ TEST_ME <- function() {
   dtAll[ date > dateMax - 30] %>% 
     ggplot() + 
     #facet_wrap( city ~ .) +
-    facet_wrap( reorder(city, lng) ~ .) +
-   # facet_wrap( reorder(city, lng) ~ ., scales="free") +
+    # facet_wrap( reorder(city, lng) ~ .) +
+    facet_wrap( reorder(city, -confirmed) ~ ., scales="free") +
     # facet_wrap( reorder(city, state) ~ .) +
     geom_line(aes(date, confirmed), col="orange") +
     geom_line(aes(date, deaths), col="red") +
@@ -203,7 +206,7 @@ TEST_ME <- function() {
   # Better way
   
   cols <- c("confirmed", "deaths")
-  colsTotal <- paste0(cols, "Total"); colsSum
+  colsTotal <- paste0(cols, "Total"); colsTotal
   colsSpeed <- paste0(cols, "Speed"); colsSpeed
 
   dtAll[, lapply(.SD, sum), .SDcols=cols]
@@ -230,13 +233,14 @@ TEST_ME <- function() {
 
   # .. Total for each day so we can plot it ----
   
-  dtAll[, (colsSum):= lapply(.SD, cumsum), .SDcols=cols]
+  dtAll[, (colsTotal):= lapply(.SD, cumsum), .SDcols=cols]
   
   dtAll[ date > dateMax - 30] %>% 
     ggplot() + 
     #facet_wrap( city ~ .) +
-    facet_wrap( reorder(city, lng) ~ .) +
+    # facet_wrap( reorder(city, lng) ~ .) +
     # facet_wrap( reorder(city, lng) ~ ., scales="free") +
+    facet_wrap( reorder(city, -confirmed) ~ .) +
     # facet_wrap( reorder(city, state) ~ .) +
     geom_line(aes(date, confirmedTotal), col="orange") +
     geom_line(aes(date, deathsTotal), col="red") +
