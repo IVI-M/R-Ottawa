@@ -22,6 +22,27 @@ Intermediate:
 - https://stat545.com/
 - https://datasciencebox.org/
 
+---
+
+## Homework for R101
+
+- https://education.rstudio.com/learn/beginner/ (first three primers of Tutorials)
+  - https://rstudio.cloud/learn/primers/1
+  - https://rstudio.cloud/learn/primers/2
+  - https://rstudio.cloud/learn/primers/3
+  - Familiarize yourself with list of  learning resources there    
+*NB: All resources in rstudio are FREE*
+  
+- https://www.datacamp.com/
+  - https://www.datacamp.com/courses/free-introduction-to-r (Chapter 1 - FREE)
+  - Familiarize yourself with list of courses, tracks and skills there 
+*NB: Some courses are FREE. First chapter in each course is always free*
+
+---
+
+## Portals to deploy your solutions and search for solutions form others 
+  - github.io, rpubs.com, https://bookdown.org/, shinyapps.io
+
 ## Blogs
 
 - https://blog.rstudio.com/   
