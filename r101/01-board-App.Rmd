@@ -187,7 +187,8 @@ renderPlotly( {
 title: "COVID-19 in US"    
 subtitle: "Situational Analysis Report"    
 author: "Prepared by: [R Ottawa community](https://ivi-m.github.io/R-Ottawa/)"   
-date: "Last updated: 3 June 2020"   
+<!-- date: "Last updated: `r format (Sys.time(), '%d %B, %Y')`"    -->
+date: "Last updated: `3 June 2020`"    
 
 ### Data source
 
