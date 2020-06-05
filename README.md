@@ -9,6 +9,9 @@ Pages for people interested in learning and using R in National Capital Region a
 
 ### News:  
 
+2020-06-05:
+- We finished this season. All codes are posted. Resources updated. Have great summer!
+
 2020-05-13:
 -  35 mins a week seems not enough... Following requests, we'll add another R101 "Lunch and Learn" session on Fridays, the same time.
 - Ideas for homework are added in [ Resources](resources.md)
