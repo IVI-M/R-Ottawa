@@ -1,11 +1,19 @@
 ---
 title: "COVID-19 in US"
+# subtitle: (Lunch and Learn R) 
+# author: Dmitry Gorodnichy
+date: "on `r format(Sys.time(), '%d %B, %Y')`"
 runtime: shiny
 output: 
   flexdashboard::flex_dashboard:
+    social: menu
+    source_code: embed
     orientation: columns
     vertical_layout: fill
 ---
+<!-- session008.Rmd = 01-board-App.Rmd -->
+<!-- Run this code at https://itrack.shinyapps.io/covid/session008.Rmd -->
+<!-- Learn R and how this code is developed at https://ivi-m.github.io/R-Ottawa/101.html -->
 
 ```{r readCovidUS , include=FALSE}
 library(flexdashboard)
@@ -26,25 +34,16 @@ selectInput("state", "Choose State:",
             choices = dtUS$state %>% unique
 )
 
-
 sliderInput("showN", 
             label = "Narrow output to (put 0 to show all):",
             pre = "top ",
             post  = " cities",
-            min = 0, max = 49, value = 6)
-
-hr()
+            min = 0, max = 50, value = 10)
 
 sliderInput("daysToTrack", label = "Days to track:",
             min = 7, max = 90, value=30)
 
-
 checkboxInput("scale", "Keep scale constant", F)
-
-# checkboxInput("sortby", "Order alphabetically", F)
-
-# checkboxInput("deaths", "Show deaths (instead of confirmed)", F)
-
 ```
 
 
@@ -55,21 +54,48 @@ checkboxInput("scale", "Keep scale constant", F)
 
 r.dt <- reactive({
   
-  my.state=input$state # "New York"
+  my.state="New York"
+  my.state=input$state 
+  dt <- dtGeo [ dtUS [state == my.state], on=c("country" , "state" , "city")]; dt
   
-  dt <- dtGeo [ dtUS [state == my.state], on=c("country" , "state" , "city")];dt
-  
-  if ( input$showN > 0 )
-    dt <- dt %>% covid.reduceToTopNCitiesToday(input$showN) 
+  showN = 6
+  showN <- input$showN
+  if ( showN > 0 )
+    dt <- dt %>% covid.reduceToTopNCitiesToday(showN);dt 
   
   dt[, recovered:=NULL]
-  dt[, confirmedPercentage:=round(confirmed/population*100,1)]
-  dt[, confirmedTotal:= lapply(confirmed, cumsum)]
-  # dt[, confirmedTotalPercentage:= round(confirmedTotal/population*100,1)]
-  dt
+  
+  if (F) {
+    dt[, confirmedGrowth := round ( confirmed / shift(confirmed,1) , 2)] [ ] # aka reproduction rate, R0
+    
+    dt[, confirmedPercentage:=round(confirmed/population*100,1)] []
+    dt[, confirmedTotal := cumsum(confirmed)] []
+    dt[, confirmedTotalPercentage := round(confirmedTotal/population*100,1)]
+
+    dt[, deathPercentage:=round(deaths/population*100,1)][]
+    dt[, deathTotal := cumsum(deaths)][]
+    dt[, deathTotalPercentage := round(deathTotal/population*100,1)]
+  } else {
+    
+    colsCases <- c("confirmed", "deaths")
+    colsGrowth <- paste0(colsCases, "Growth")
+    colsPercentage <- paste0(colsCases, "Percentage")
+    colsTotal <- paste0(colsCases, "Total")
+    colsTotalPercentage  <- paste0(colsCases, "TotalPercentage")
+    
+    dt[ ,  (colsGrowth) := round ( .SD / shift(.SD, 1) , 2) , .SDcols = colsCases] [ ] 
+    dt[ ,  (colsPercentage) := lapply(.SD,  function(x) { round(x/population*100,1)  }   ), .SDcols = colsCases] []
+    dt[ ,  (colsTotal) := cumsum(.SD), .SDcols = colsCases] []
+    dt[ ,  (colsTotalPercentage) :=  lapply(.SD,  function(x) { round(x/population*100,1)  }   ), .SDcols = colsTotal] []
+  }
+  
+  dt[, deathRate := round (deaths/confirmed*100,1)]
+  dt[, deathRateAverage := round (deaths/confirmedTotal*100,1)]
+  
 })
 
 ```
+
 
 
 # Map
@@ -88,26 +114,35 @@ renderLeaflet({
   my.mean <-  dtToday$confirmed %>% mean()
   
   dtToday[, ratingcol:= ifelse(confirmed<my.mean, "yellow", "red")]
+  dtToday[, ratingcol:= ifelse(confirmedGrowth<1, "yellow", "red")]
+  
+  
   dtToday[, strMessage:= paste0(city, 
-                                # ":<br>Total: ", confirmedTotal, "(", confirmedTotalPercentage, "%)", 
-                                "<br>Daily: ", confirmed, "(", confirmedPercentage, "% population)" 
-                                )]
+                                ":<br>Confirmed:",
+                                "<br>  Total: ", confirmedTotal, "(", confirmedTotalPercentage, "%)",
+                                "<br>  Daily: ", confirmed, "(", confirmedPercentage, "% population)", 
+                                "<br> Deaths:",
+                                "<br>  Total: ", deathsTotal, "(", deathsTotalPercentage, "%)",
+                                "<br>  Daily: ", deaths, "(", deathsPercentage, "% population)",
+                                "<br>Death rate: ", 
+                                "<br>  Today: ", deathRate, ". Average: ", deathRateAverage
+  )  ]
   
   leaflet::leaflet(dtToday) %>% 
     addTiles() %>%
     addCircleMarkers(~lng, ~lat, 
                      color = ~ratingcol, 
                      popup = ~strMessage,
-                     label = ~paste0(city, ": ", confirmed, "(", confirmedPercentage, "%) / day") 
+                     label = ~paste0(city, ": ", confirmed, "(", confirmedPercentage, "%) / day. R0=", confirmedGrowth) 
     ) %>% 
     addPopups(~lng,  ~lat, 
-              popup = ~paste0(city, ": ", confirmed, " / day") 
+              popup = ~paste0(city, ": ", confirmed, " / day. R0=", confirmedGrowth) 
     )  %>%
     addLegend("bottomleft",
               colors = c("yellow","red"),
               labels = c(
-                "Accelerates slowly",
-                "Accelerates rapidly"),
+                "Growth (R0) < 1",
+                "Growth (R0) > 1"),
               opacity = 0.7)
   
 })
@@ -123,10 +158,16 @@ renderLeaflet({
 
 ```{r}
 DT::renderDataTable({
-  DT::datatable(r.dt() [date==dateMax])
+  
+  r.dt() [date==dateMax]%>% 
+    DT::datatable(
+      filter ="top",
+      options = list(
+        scrollY = TRUE,
+        scrollX = TRUE)
+    )
 })
 ```
-
 
 
 # Trends
@@ -177,25 +218,70 @@ renderPlotly( {
 ```
 
 
+
+
 # Info
 
-## Column
-<!-- ## Column {.tabset .tabset-fade } -->
+<!-- ## Column -->
+## Column {.tabset .tabset-fade }
 
 ### About App
 
-title: "COVID-19 in US"    
-subtitle: "Situational Analysis Report"    
-author: "Prepared by: [R Ottawa community](https://ivi-m.github.io/R-Ottawa/)"   
-<!-- date: "Last updated: `r format (Sys.time(), '%d %B, %Y')`"    -->
-date: "Last updated: `3 June 2020`"    
+#### Technical information
+
+
+
+This App is developed as part of the *"Lunch and Learn R"* sessions, organized by Dmitry Gorodnichy within the  [R Ottawa community](https://ivi-m.github.io/R-Ottawa/). The sessions are free and open to public. They are also recorded and can be watched at YouTube. 
+See  [R Ottawa - R101](https://ivi-m.github.io/R-Ottawa/101.html) portal for more details.
+
+
+
+<!-- title: "COVID-19 in US"     -->
+<!-- subtitle: "Situational Analysis Report"     -->
+<!-- author: "Dmitry Gorodnichy"    -->
+<!-- <!-- date: "Last updated: `r format (Sys.time(), '%d %B, %Y')`"    --> -->
+<!-- date: "Last updated: `3 June 2020`"    -->
+
+
+
+*Name*: COVID-19 Tracker  (US - Light Version)    
+*Type*: Web Application. Compatible with mobile devices.    
+*URL*: https://itrack.shinyapps.io/covid/us-session008.Rmd    
+*License*:  [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode).   
+*Developer*: [Dmitry Gorodnichy](https://www.linkedin.com/in/dmitry-gorodnichy/)  and  [R Ottawa community](https://ivi-m.github.io/R-Ottawa/).  
+
+
+*Last updated*: 3 June 2020
+*Version*: 0.0.8
+
+*Questions/Comments*: [dg@ivim.ca](email:dg@ivim.ca)
+<!-- *Contact*: [dg@ivim.ca](email:dg@ivim.ca) -->
+
+
+
+#### Disclaimer 
+
+This work is not to be associated with any  work done by the Government of Canada. The authors are not liable for any errors that might be present in  data or data interpretation. For all official information related to Covid in Canada please visit the official [Coronavirus disease (COVID-19) site](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html?utm_campaign=not-applicable&utm_medium=vanity-url&utm_source=canada-ca_coronavirus).
+
+
+
+#### Acknowledgements
+
+The App is developed using R in RStudio. 
+The following R libraries are used:    
+
+- Data management: data.table, dtplyr,  stringr, readxl, lubridate, magrittr.   
+- Data visualization: ggplot2, plotly, leaflet, DT.  
+<!-- - Machine learning: caret, GMDH.   (TBA) -->
+- Publishing: shiny, rsconnect,  knitr, rmarkdown, flexdashboard.   
+
 
 ### Data source
 
 This report is generated automatically. 
-
 The COVID-19 data is taken from:   
 
 - [Johns Hopkins University U.S. Coronavirus database](https://coronavirus.jhu.edu/us-map), which is available at this [GitHub repository](https://github.com/CSSEGISandData/COVID-19).
 
 This database was last updated on `r dateMax`.
+
