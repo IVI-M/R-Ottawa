@@ -90,8 +90,8 @@ https://resources.rstudio.com/webinars/reproducibility-in-production - September
 
 ### rstudio::conf
 
-rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019    
-rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)   
+rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019 
+rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)  
 
 
 ## www.datacamp.com 
@@ -111,8 +111,8 @@ rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 
 ### CAREER TRACK: Data Scientist with R
 
-- https://www.datacamp.com/courses/cleaning-data-in-r    
-- https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse  
+- https://www.datacamp.com/courses/cleaning-data-in-r
+- https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse 
 - https://www.datacamp.com/courses/intro-to-sql-for-data-science + 2 more
  
   
@@ -125,9 +125,8 @@ rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 
 ## Learn `data.table`
 
-- http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)     
-- https://www.datacamp.com/courses/time-series-with-datatable-in-r    
-- https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable      
-
-- https://github.com/Rdatatable/data.table/wiki/Articles     
+- http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)
+- https://www.datacamp.com/courses/time-series-with-datatable-in-r
+- https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable  
+- https://github.com/Rdatatable/data.table/wiki/Articles
 - https://rpubs.com/josemz/SDbf - Making .SD your best friend
