@@ -40,8 +40,8 @@ Intermediate:
 
 ---
 
-## Portals to deploy your solutions and search for solutions form others 
-  - github.io, rpubs.com, https://bookdown.org/, shinyapps.io
+## Portals to deploy your solutions and search for solutions from others 
+  - github.io, rpubs.com, bookdown.org, shinyapps.io, 
 
 ## Blogs
 
@@ -111,23 +111,23 @@ rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 
 ### CAREER TRACK: Data Scientist with R
 
-https://www.datacamp.com/courses/intro-to-sql-for-data-science + 2 more
+- https://www.datacamp.com/courses/cleaning-data-in-r    
+- https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse  
+- https://www.datacamp.com/courses/intro-to-sql-for-data-science + 2 more
  
-https://www.datacamp.com/courses/cleaning-data-in-r    
-https://www.datacamp.com/courses/communicating-with-data-in-the-tidyverse    
+  
 
 ### Efficient programming
 
-https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1
-https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2
-https://www.datacamp.com/courses/introduction-to-git-for-data-science
-https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund 
+- https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1, https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2
+- https://www.datacamp.com/courses/introduction-to-git-for-data-science
+- https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund 
 
 ## Learn `data.table`
 
-http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)     
-https://www.datacamp.com/courses/time-series-with-datatable-in-r    
-https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable      
+- http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)     
+- https://www.datacamp.com/courses/time-series-with-datatable-in-r    
+- https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable      
 
-https://github.com/Rdatatable/data.table/wiki/Articles     
-https://rpubs.com/josemz/SDbf - Making .SD your best friend
+- https://github.com/Rdatatable/data.table/wiki/Articles     
+- https://rpubs.com/josemz/SDbf - Making .SD your best friend
