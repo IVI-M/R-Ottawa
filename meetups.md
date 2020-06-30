@@ -8,25 +8,23 @@
 ### Dial-in details
 
 
-Topic: "Lunch and Learn: CMPUT101 using R" (Building Data Science App from the scratch - together).   
+Topic: "Lunch and Learn R" (Building Data Science App from the scratch - together).   
 Lead by: Dmitry Gorodnichy  
-Time: Every Wednesday and Friday at 12:20-12:55 Ottawa Time (Eastern US and Canada)    
-<!-- Join Zoom Meeting: [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550)    -->
-
-Join Zoom Meeting:   [https://us04web.zoom.us/j/337086550](https://us04web.zoom.us/j/337086550?pwd=c202L3NhVlJyQVlIYTE5WTB4ZktQUT09) 
-   
-Meeting ID: 337 086 550     
-Password: 19350706    
-
-<!-- Password: 
+Time: Every Wednesday and Friday at 12:20-12:55 Ottawa Time (Eastern US and Canada)  
+Password: 
 *please contact the organizer or get it from
-[GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)* -->
+[GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
+
+Status: Break for Summer
+
+
+
 
 ---
 
 
-Since 2020/04/22 "Lunches with Data Challenges" meetings have become "Lunch and Learn: CMPUT101 using R" sessions.   
-Please go [R101](101.md) page for all information related to these sessions.
+In  April-June 2020 "Lunches with Data Challenges" were dedicated to learning R. 
+Visit [R101](101.md) page for all information related to these sessions.
 
 
 See also:
@@ -53,7 +51,7 @@ Interactive Web App to better visualize and predict the spread of Covid19 pandem
   - short-term forecasting 101 (features, assumptions, predictive models)
   - reproducible data science
   - functional, modular, scalable, agile programming
-  - software Engineering 101 (naming conventions, splitting and sourcing, source control, github)
+  - Software Engineering 101 (naming conventions, splitting and sourcing, source control, github)
   
 - [https://itrack.shinyapps.io/border/](https://itrack.shinyapps.io/border/)   
 Predicting and optimizing Border Wait Time using Artificial Intelligence  [(LinkedIn article](https://www.linkedin.com/pulse/predicting-optimizing-border-wait-time-using-dmitry-gorodnichy/))
@@ -82,5 +80,4 @@ Improving Public Service performance using Public Service Employee Surveys and D
   - library(eyetrackingR)
 
 
-Check  [ R-101 ](https://github.com/IVI-M/R-Ottawa/tree/master/r101) for samples of discussed R codes.   
 Back to [R Ottawa](https://ivi-m.github.io/R-Ottawa/). 
