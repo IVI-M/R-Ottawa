@@ -2,6 +2,7 @@
 # Author: Dmitry Gorodnichy
 # Version: 0.1.2 (complete example)
 # Date: 2019-10-10
+# https://github.com/IVI-M/R-Ottawa/blob/master/r101/LnL-01-intro.R
 
 if (T) { # Start ----
   library(magrittr)
