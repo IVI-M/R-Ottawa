@@ -5,10 +5,6 @@ author: "Dmitry Gorodnichy"
 date: "Lunch and Learn (Summer, 2020) - under contruction"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 
 ## Outline
 
