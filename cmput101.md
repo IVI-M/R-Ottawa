@@ -10,7 +10,7 @@ date: "Lunch and Learn (Summer, 2020) - under construction"
 
 - Part 1: General Software Engineering principles
 - Part 2: Working with Data (Data Engineering as part of Software Engineering)
-- Part 3: Walk through  the "COVID App" Project example
+- Part 3: Walk through  the "COVID App" and "XXX Audit" Projects examples
 - References 
 
 
@@ -103,21 +103,29 @@ date: "Lunch and Learn (Summer, 2020) - under construction"
 
 
 
-## Part 3:  "PIK Audit" Project example
+## Part 3:  Examples
+
+### COVID App (R Ottawa Lunch and Learn)
+
+- we build App for US, but then ... (almost as magic) with one line replacement, we can convert the App process data from Canada
+- source control: at github and inside RStudio in `rstudio.cloud`
+
+### "XXX Audit" Project example
 
 - DG built .R library (script containing functions) and .Rmd example that he shared to  DS
   - DS can a) now use it to build his own .Rmd reports,  b) buld his own library (using the same framework)
   - Anyone can use them. 
 - Leverages multiple .R libraries that Dmitry wrote between 2015-2020, further improves those libraries
-- Source-control  
-  - on local laptop using GIT within RStudio, file + Apollo, 
-- "Sharing"  by emailing (for now)
+- Source-control:
+  - on local laptop using GIT within RStudio
+  - "Sharing"  by emailing (for now)
+  - Each developer responsible for her own source file
 
 
 Other examples (we can use): 
 
-- hobby projects: Geomapping of Covid (used in R Ottawa Lunch and Learn R101), Geomapping of BWT, PSES; 
-- CBSA projects: Expert system for BWT prediction/optimization, data cranching and AI for AVATAR (lie detection) 
+- hobby projects: Geomapping of Covid (used in R Ottawa Lunch and Learn R101), Geomapping of BWT (https://itrack.shinyapps.io/border/), PSES (https://itrack.shinyapps.io/PSES/); 
+- CBSA projects: Expert system for BWT prediction/optimization, data cranching and AI for [AVATAR / Behaviour screening project](https://sites.google.com/site/aider4canada/projects/behaviour)
 
 
 
