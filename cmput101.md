@@ -1,8 +1,8 @@
 ---
-title: "CMPUT101"
+title: "CMPUT101 "
 subtitle: "Fundamentals of Software Engineering (with application to Data Engineering)"
 author: "Dmitry Gorodnichy"
-date: "Lunch and Learn (Summer, 2020)"
+date: "Lunch and Learn (Summer, 2020) - under contruction"
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Part 1: General Software Engineering principles
 - Part 2: Working with Data (Data Engineering as part of Software Engineering)
-- Part 3: Walk through  the "PIK Audit" Project example
+- Part 3: Walk through  the "COVID App" Project example
 - References 
 
 
@@ -131,6 +131,8 @@ Other examples (we can use):
 ## References:
 
 - R Ottawa Resources page: https://github.com/IVI-M/R-Ottawa/resources.md
+  - https://github.com/IVI-M/R-Ottawa/r101
+- TBA
 
 ### About Author:   
 
