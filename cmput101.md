@@ -2,7 +2,7 @@
 title: "CMPUT101 "
 subtitle: "Fundamentals of Software Engineering (with application to Data Engineering)"
 author: "Dmitry Gorodnichy"
-date: "Lunch and Learn (Summer, 2020) - under contruction"
+date: "Lunch and Learn (Summer, 2020) - under construction"
 ---
 
 
