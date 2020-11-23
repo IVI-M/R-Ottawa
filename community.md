@@ -11,5 +11,5 @@
 - [Statistics Canada Workshops, training and conferences](https://www.statcan.gc.ca/eng/wtc)
   - [Data Science Network for the Federal Public Service (DSNFPS)](https://www.statcan.gc.ca/eng/data-science/network)
   
-* Access restricted to GC only
+*Access restricted to GC only
 
