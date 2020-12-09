@@ -14,7 +14,6 @@ Pages for people interested in learning and using R in National Capital Region a
 <!-- We will show you how to use Data Science and Artificial Intelligence (in R and from scratch) to automatically extract -->
 We will show you how to use Data Science (in R) to gain
 insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). See [ R101](101.md) for more details.    
-To register, please contact  [Dmitry Gorodnichy](emailto:dmitry.gorodnichy @ cbsa-asfc.gc.ca). 
 
 2020-06-05:
 - We finished the first season, where we learnt how to write an interactive dashboard that visualizes the COVID datain US. - You can see the final result [here](https://itrack.shinyapps.io/covid/us.Rmd)!   All codes are posted. Resources are updated. Have great summer!
