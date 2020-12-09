@@ -5,26 +5,23 @@
 [ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ Community](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101](101.md)
 
 
+### Status:
+
+The 2020 season is over. 
+
+When new season starts, this information will be posted.
+
+
 ### Dial-in details
 
-
-Topic: "Lunch and Learn R" (Building Data Science App from the scratch - together).   
+Topic: "Lunch and Learn R"  
 Lead by: Dmitry Gorodnichy  
-Time: Every Wednesday and Friday at 12:20-12:55 Ottawa Time (Eastern US and Canada)  
+Time: Every Friday at 11:30-12:30 Ottawa Time (Eastern US and Canada)  
 Password: 
-*please contact the organizer or get it from
-[GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
+*please contact the organizer* 
 
-Status: Break for Summer
-
-
-
-
----
-
-
-In  April-June 2020 "Lunches with Data Challenges" were dedicated to learning R. 
-Visit [R101](101.md) page for all information related to these sessions.
+<!-- [GCCollab](https://gccollab.ca/discussion/view/4482867/enlunches-with-data-challenges-on-wednesdays-on-rfr)*
+-->
 
 
 See also:
@@ -35,7 +32,7 @@ See also:
 
 ---
 
-
+<!-- 
 ####  Topics available for discussion
 
 - [https://itrack.shinyapps.io/covid](https://itrack.shinyapps.io/covid/):   
@@ -79,5 +76,6 @@ Improving Public Service performance using Public Service Employee Surveys and D
   - cool visualizations using: library(ggrepel); library(ggpubr);   library("gridExtra"); library(png)
   - library(eyetrackingR)
 
+-->
 
 Back to [R Ottawa](https://ivi-m.github.io/R-Ottawa/). 
