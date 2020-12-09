@@ -12,10 +12,9 @@ c) [https://rstudio.cloud/](https://rstudio.cloud/) (login required) - All in On
 ## Teach yourself
 
 Beginners:
-- https://rstudio.com/
-  - R basics: https://education.rstudio.com/learn/beginner/
-  - Dashboard in R: https://rmarkdown.rstudio.com/flexdashboard/
-  - data.table: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+- R basics: https://education.rstudio.com/learn/beginner/
+- Dashboard in R: https://rmarkdown.rstudio.com/flexdashboard/
+- data.table: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
 
 Intermediate:
 - https://r4ds.had.co.nz/  (https://jrnold.github.io/r4ds-exercise-solutions/)
@@ -24,7 +23,7 @@ Intermediate:
 
 ---
 
-## Homework for R101
+## Homework for `Lunch and Learn R101`
 
 - https://education.rstudio.com/learn/beginner/ (first three primers of Tutorials)
   - https://rstudio.cloud/learn/primers/1
@@ -38,22 +37,46 @@ Intermediate:
   - Familiarize yourself with list of courses, tracks and skills there 
 *NB: Some courses are FREE. First chapter in each course is always free*
 
+
+--- 
+
+## More on `data.table`
+
+- http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)
+- https://www.datacamp.com/courses/time-series-with-datatable-in-r
+- https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable  
+- https://github.com/Rdatatable/data.table/wiki/Articles
+- https://rpubs.com/josemz/SDbf - Making .SD your best friend
+
+
+## More on Dashboards and Shiny
+
+When flexdashboard (older versions of R) does not work, one can use http://rstudio.github.io/shinydashboard/  
+
+free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny  
+https://www.datacamp.com/courses/building-dashboards-with-shinydashboard       
+https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny-case-studies   
+
+
 ---
 
-## Portals to deploy your solutions and search for solutions from others 
+## Portals to deploy your solutions (and search for solutions from others!)
   - github.io, rpubs.com, bookdown.org, shinyapps.io, 
 
 ## Blogs
 
+On R:
 - https://blog.rstudio.com/   
 - https://rviews.rstudio.com/   
 - https://www.r-bloggers.com/    
- 
+- https://deanattali.com/blog/advanced-shiny-tips/   
+
+Related:
 - https://towardsdatascience.com/    
 - https://www.kaggle.com/kernels   
 - https://www.analyticsvidhya.com
     
-## By Canada School of Public Service
+## From Canada School of Public Service
 
 - https://github.com/CSPS-EFPC-DAAN/Resources
   - https://github.com/CSPS-EFPC-DAAN/Data-AI-ML
@@ -71,14 +94,6 @@ https://github.com/rstudio/learnr
 A guide to some of the most useful R Packages that we know about, organized by their role in data science. -
 https://github.com/rstudio/RStartHere
 
-### Shiny / Dashboards
-
-When flexdashboard (older versions of R) does not work, one can use http://rstudio.github.io/shinydashboard/  
-
-free - https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny  
-https://www.datacamp.com/courses/building-dashboards-with-shinydashboard       
-https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny-case-studies   
-https://deanattali.com/blog/advanced-shiny-tips/   
 
 ### Webinars:
 
@@ -94,7 +109,7 @@ rstudio::conf 2019 talks: https://resources.rstudio.com/rstudio-conf-2019
 rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)  
 
 
-## www.datacamp.com 
+## More from www.datacamp.com 
 
 ### CAREER TRACK: R Programmer
 
@@ -123,10 +138,4 @@ rstudio::conf 2018 talks (https://beta.rstudioconnect.com/content/3105/)
 - https://www.datacamp.com/courses/introduction-to-git-for-data-science
 - https://www.datacamp.com/courses/reporting-with-r-markdown - by Garrett Grolemund 
 
-## Learn `data.table`
 
-- http://r-datatable.com (https://rdatatable.gitlab.io/data.table/)
-- https://www.datacamp.com/courses/time-series-with-datatable-in-r
-- https://www.datacamp.com/courses/data-manipulation-in-r-with-datatable  
-- https://github.com/Rdatatable/data.table/wiki/Articles
-- https://rpubs.com/josemz/SDbf - Making .SD your best friend
