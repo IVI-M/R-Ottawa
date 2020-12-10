@@ -3,7 +3,7 @@
 # Author: Dmitry Gorodnichy. Date: Jan 2017 - 08/2018
 # Everything by Hadley Wickham and Co, except text
 #
-# Contents  / Includes :
+# Contents  / Includes :  non-standard evaluation and dtplyr functions
 
 
 library(ggplot2)
