@@ -1,0 +1,380 @@
+
+---
+title: "Computing a system's characteristic from a set of observations" 
+# title: "Learning Physics using R and R using Physics"
+subtitle: "Physics Labs in R"
+date: December 2020
+author: Prepared by Dmitry Gorodnichy for [R Ottawa](https://ivi-m.github.io/R-Ottawa/101.html)
+url: "https://ivi-m.github.io/R-Ottawa/physics-labs/01_y=kx.Rmd" 
+# https://github.com/IVI-M/R-Ottawa/edit/master/physics-labs/01_y=kx.md
+output:
+  html_document:
+    code_folding: hide # need knitr::opts_chunk$set(echo=T)
+    toc: true
+    toc_float: true
+---
+
+
+
+## Introduction {.tabset}
+
+One of distinctive abilities of homo sapiens that distinquishes them from animals is the ability to think analytically. - We can make conclusions about *something that we do not see* from other *things that we can see* - and we do it all the time, either intuitively or using scientific methods. Here we'll talk about how to do scientifically - using physics and data science in R.
+
+### Physics part
+
+to measure a system's charactestic that cannot be measured directly  from other charactestics that can be measured directly is one of the most common tasks in physics (as it in our life!). Examples are:
+
+
+a. Finding how fast your child (or mushroom) grows (or  bicycle moves), knowing that $V  = displacement / time$.
+
+a. Finding a force $F$ that was applied to an object of mass $m$ to move it with acceleration $a$, knowing that  $F  = m  * a$ . 
+
+
+<!-- A projectile launches a missile (or soccer player kicks the ball)  with constant speed at various angles:   -->
+c. Finding the speed of a soccer ball (or a missile), knowing the angle at which it was kicked (launched) and the distance how far it flew:
+$V0 = \sqrt { g * distance \over sin2\beta})$.   
+
+<!-- b. This can also be said about what Dalai Lama calls an "analytical way" of learning about our mind, which you cannot see,  but which you can find out about from observing the  things that you can see. -->
+
+Mathematically speaking (or, as scientists say, "mathematically formalized")", all of these  tasks are the same,  described as follows:
+
+<!-- *Given*: a relationship $k = f(x^1, x^2, ..., x^K)$ and set of observations  $(x^1_i,x^2_i, ... , x^K), i \in \{1, ..., N\} $, which in the simplest case,  like in above example, is reduced to  $k = X$   *Find*: $K$.   -->
+
+
+
+*Given*: a set of observations  $(x_i, y_i), i \in \{1, ..., N\}$ and the relationship that links the output  (reponse) variable $y$ to the input (trigger or factor) variable  $y_i =k * x_i $, 
+*Find*: $K$, or   more specicifally,
+*Find*: $K$ such that *explains the best* the observed data, 
+(Or, as scientists again would say)
+*Find*: $K$ such that produces the least total (or average) error between the actual  $Y_i$ and  expected  $Y_i^*$ observations:  $\sum_i^N(Y_i - Y_i^*)$.
+
+
+Below we show how this can be done.
+<!-- This is how this can be done.  -->
+<!-- The solution below is shown for a projectile problem and can be applied for any similarly formalized problem. -->
+
+***
+
+### Data science part
+
+Actually, there is not such science as "data science" :) . 
+The term was coined only the second decade of XXI-st century, whereas people worked with data since a several centuries before.
+
+There are however many other types of science that work with data: Natural sciences (...), Social Sciences (...)
+
+And then there is a  special type of "science", which is not even part of Science schools in many universities (e.g. at uOttawa), but put of Engineering school - called "Computer science" or "Computing science". These are people who developed computer languages, complex algorithms,  computer systems and programs, including the now a very notorious thing called "Artificial Intelligence" :)
+
+
+We'll talk more about that later.
+
+In meanwhile, go a head just download the source of this file: 
+[https://ivi-m.github.io/R-Ottawa/physics-labs/01_y=kx.Rmd](https://ivi-m.github.io/R-Ottawa/physics-labs/01_y=kx.Rmd).
+
+Open it in R Studio, run it, and voila ! - You have built a  "computer system"" that is doing a job for you already -  loading data, computing formulas, and showing this article with results and comments! 
+
+Then, if  you wish, you can save your result - the created .html file, and  email it to your friend or publish on your personal page (e.g. in github) or  RPubs - which is what we did with this article.
+
+---
+
+### R part
+
+This article in R Markdown (.Rmd file) with a) bits of LaTex code  for writting mathematical formula, and b) bits (or chunks, since there rather big bits) of R code
+
+This is a scientific way of writting any article...
+
+***
+
+<!-- We'lltalk more  -->
+
+
+
+
+
+
+## Warm-up excercises {.tabset}
+
+Prior to building solutions to the physics problems  using R, let's set the foundation for what is called "robust scalable programming" in R.
+
+### Key R concepts
+
+R is the language that your computer understands So you need to translate your human language 
+Click on the tab at right see how to write the R code.
+Click on [Code] buttons to see the codes for everything that iscomputer generatedin this article.
+
+
+### Your first ever code in R to describes a physical system
+
+```{r}
+
+
+# Warm up exercise to help you to write your first R code:
+# Experiment 1: trajectory of a ball kicked  by soccer player
+
+# These are three MOST needed libraries:
+
+library(magrittr);  # to chain :  1:10 %>% sin %>% round (2)  instead of  round(sin(1:10), 2)
+library(data.table);# to use tables: dt <- data.table(x=1:10)  %>% .[, y:= sin(x) %>% round(2)]
+library(ggplot2);   # to plot: ggplot(dt) + geom_line(aes(x,y)) 
+
+# These are constants
+g <-  9.8 # m/s^2
+
+# These are variables and their values. 
+# NB: How we name variables and functions! Unless they are obvious (or used once only), they should be named in "hungarian" notation as shown below.
+
+# Simple variable:
+
+time_start <- 0   # time you start / finish observing (secs). It is numeric (i.e. floating point) number 
+time_end <- 3         # Better name :  fTimeEnd
+nObservations <- 5L  # number of observations (inter). It is integer number.
+
+# Array of simple variables:
+
+# aObservations <- 0:nObservations; 
+aTimes <- seq(time_start, time_end, (time_end-time_start)/nObservations); aTimes # Better name: afTimes
+aTimes %>% length()
+
+V0 <- 30 # initial ball speed: min/sec
+alpha <- 45 * pi / 180 # angle over horizon: degrees converted to radians
+h0 <- 0 #initial heiaght: meter
+
+# This is a function
+mps2kmph <- function (speed){  # Another good name:  convertMinPerSec2KmPerHour()
+  speed * ( 1 / 1000) / (1 / 3600);  # 1 km = 1000 m; 1 h = 3600
+}
+mps2kmph(V0)
+
+# Complex variable: data.table (also known as "improved data.frame"")
+# NB: Complex variable describes a complex system. - Each row represents a system state at time t
+
+dtKickedBall <- data.table(t = aTimes); 
+dtKickedBall %>% 
+  .[, observation := 1:.N] %>%  
+  .[, ':='(
+    x = V0 * cos(alpha) * t,
+    y = h0 + V0 * sin(alpha) * t - g * t^2 / 2
+    # Vx = V0 * cos(alpha),
+    # Vy = V0 * sin(alpha) - g * t
+  ) ]  
+# NB 1: There's no assignment operator ' <- ' ! New columns are added to existing data.table !
+# NB 2: Note use of piping and multiple (vs. single) column modification
+# NB 3: columns names in data.table do not need  follow naming conventions - you  print them anyway
+dtKickedBall
+
+# Now we can find somethin  interesting in the dynamics of this system:
+
+dtKickedBall[, c("t","y")] # show ("select", extract, or subset vertically)  data
+# dtKickedBall[, c(1,4)]   # the same
+# dtKickedBall[, .(t,y)]   # the same
+
+# dtKickedBall$y       # show ("pull", extract)  column as array
+dtKickedBall[["y"]]  # the same
+  
+# dtKickedBall[2] # show the state at second row
+dtKickedBall[c(1:2,(.N-2):.N)] # show ("slice", subset horisontally) the first and last two rows
+dtKickedBall[y>0] # show ("filter") all states above the ground
+dtKickedBall[which.max(y)] # show the state when the ball is observed at heighest point
+# dtKickedBall[which.min(abs(Vy))] # ... when the ball started to descend - the same as above
+
+
+# ... and plot the result
+ggplot (dtKickedBall) + 
+  geom_line(aes(x,y)) +
+  geom_vline(xintercept =dtKickedBall[which.max(y)]$x)
+
+# NB: use of "aes()" for plotting dtKickedBall$x and dtKickedBall$y
+
+
+# FINAL step:
+# Want to plot with different settings ? - 
+# Encapsulate everything above in a function that depends on the variables you want to change
+
+fKickedBall <- function(time_start, time_end, nObservations, V0, alpha, h0) {
+  # NB: to print anything (x) from inside a function, you need to use `x %>% print()`
+}
+
+# To learn more, goto: https://github.com/IVI-M/R-Ottawa/blob/master/resources.md
+```
+
+
+
+## Example 1: V = km / hour
+
+
+Lets say, we made 5 measurements ("km" and "hour") for a moving object. 
+The first step in any analysis is plotting the measurements:
+
+```{r}
+library(data.table); 
+library(magrittr); 
+hour <- c(1,  3,  2, 5, 4.25)
+km <- c(12, 35, 16, 57, 41)
+dt <- data.table(km=km, hour=hour)
+
+
+dt[, observation:=1:.N]
+
+ggplot(dt) +  geom_label(aes(hour,km, label=observation))
+```
+
+One way of computing the object speed is to  compute  $V_i$ as $V=km_i/hour_i$ for each measurement and then take the average of it:
+
+```{r}
+dt$V <- round( dt$km / dt$hour, 1) 
+# dt %>% kable()
+dt
+V.ave1 = mean(dt$V) %>% round(1); V.ave1 
+V.sd1 = sd(dt$V) %>% round(1); V.sd1 
+```
+
+This gives us $V_{ave} =  `r V.ave1` \pm `r V.sd1`$
+
+```{r}
+
+ggplot(dt) + geom_col( aes(observation,V) ) + 
+  geom_hline(yintercept = V.ave1) + 
+  geom_label(aes(1,V.ave1,label=paste0("Vave=", V.ave1)))
+```
+
+This was easy enough and can be computed without any computer software!
+
+Yet there's also another way to find V that is "mathematically more precise" but which cannot  be done without a computer - it's called regression or building a linear model!
+
+Knowing that the relationship  between input (km)  and output (hour) is linear, we "ask" computer to find the line that "fits" the measurement points "as close as possible" - the process called regression. The slope of such line will be the speed of the object. In  R, this is done  in one line:
+
+
+
+
+
+```{r}
+# dt <- dt %>% rbind( data.table(0,0,0,0),use.names=FALSE )
+# V.ave1 = mean(dt$V) %>% round(1); V.ave1 
+# V.sd1 = sd(dt$V) %>% round(1); V.sd1 
+# dt[, observation := 1:.N]
+
+# https://rpubs.com/aaronsc32/regression-through-the-origin
+
+model0 <- lm( dt$km  ~ 0 + dt$hour ) %T>% print # # Adding the 0 term tells the lm() to fit the line through the origin
+str(model0);
+summary(model0)
+model0$coefficients
+V.as_pente <- model0$coefficients[1] %>% round(1); V.as_pente
+
+
+model1 <- lm( dt$km  ~ dt$hour )  %T>% print  # # Adding the 0 term tells the lm() to fit the line through the origin
+str(model1);
+summary(model1)
+model1$coefficients
+V.as_pente1 <- model1$coefficients[2] %>% round(1); V.as_pente1
+
+
+# model1 <- lm( dt$km  ~  dt$hour ); model1
+
+ggplot(dt,  aes(km,hour)) + geom_point( ) + geom_smooth(method = "lm", formula = y ~ 0 + x, fullrange=TRUE) +
+  xlim(0,60) + ylim(0,6)
+
+```
+
+This gives us $V_{ave} =  `r V.as_pente`$
+
+What did you notice?  - The result is different!
+
+
+```{r}
+dt[, observation:=1:.N]
+ggplot(dt) + geom_col( aes(observation,V) ) + 
+  geom_hline(yintercept = V.ave1) + 
+  geom_label(aes(1,V.ave1, label=paste0("Vave=", V.ave1))) +
+  geom_hline(yintercept = V.as_pente) + 
+  geom_label(aes(2,V.as_pente, label=paste0("Vreg=", V.as_pente)))
+```
+
+Let's understand what's going on. 
+
+Let's add FIVE "new" points, which are actually not new, but are the first one repeated FIVE more times, and see what changes.
+
+```{r}
+
+dt <- dt %>% rbind( dt[1]);
+dt <- dt %>% rbind( dt[1])
+dt <- dt %>% rbind( dt[1])
+dt <- dt %>% rbind( dt[1])
+dt <- dt %>% rbind( dt[1])
+
+V.ave1 = mean(dt$V) %>% round(1); V.ave1 
+V.sd1 = sd(dt$V) %>% round(1); V.sd1 
+dt[, observation:=1:.N]
+
+
+model1 <- lm( dt$km ~ dt$hour ); model1
+V.as_pente <- model1$coefficients[2] %>% round(1); V.as_pente
+
+
+ggplot(dt) + geom_col( aes(observation,V) ) + 
+  geom_hline(yintercept = V.ave1) + 
+  geom_label(aes(1,V.ave1, label=paste0("Vave=", V.ave1))) +
+  geom_hline(yintercept = V.as_pente) + 
+  geom_label(aes(2,V.as_pente, label=paste0("Vreg=", V.as_pente)))
+
+```
+
+We see that $Vreg$ computed using regression (as slope) is the same, whereas $Vave$ computed as average has become smaller. This is because we added five more times the smallest point, which lowered the average, but did not change the slope!
+
+So now you know it.
+However you may still wonder about two things:
+
+1.  What  is actually computer  doing in this intimidatingly sounding proccess called "regression"?, and
+1.  What if you don't have computer? How then should you  compute the average speed that would be most meaningful for the process?
+
+Remember, above we said that regression finds the line that fits the points "as close as possible" ? Mathematically speaking, this means that computer seeks to minimize the total fitting error, which can be written as follows
+
+$$ \sum_i { (hour_i - km_i*V )^2} $$
+
+
+
+## Example 2: projectile 
+
+
+```{r}
+#if numbers are entered later (e.g. as input from user), 
+projectile <- data.table()
+projectile$angle<- c(15, 30, 45, 60, 75)
+projectile$distance <- c(5.1, 8, 10,  8.5, 4.8)
+projectile <- setDT(setDF(projectile))
+
+projectile$sin2b <- sin( 2* projectile$angle / 180 * pi)
+
+g <- 9.8
+projectile$V0 <- sqrt (g*projectile$distance /  projectile$sin2b)
+
+
+
+# OR ggplot() + geom_point( aes(projectile$angle, projectile$distance)  )
+# OR ggplot(projectile, aes(projectile$angle, projectile$distance) ) + geom_point()
+ggplot(projectile) +geom_point( aes(angle,distance) )
+
+
+
+projectile
+
+V0.ave <- mean(projectile$V0, na.rm = T); V0.ave
+V0.sd <- sd(projectile$V0, na.rm = T); V0.sd
+V0.se <- V0.sd /sqrt( length(projectile$distance)); V0.se
+
+
+# ORqplot(x=sin2b,y=distance, data=projectile, geom="point")
+ggplot(projectile, aes(x=sin2b,y=distance)) +
+  geom_point(size=3) +
+  geom_smooth(method = "lm", se=F) +
+  labs(title="V=")
+
+
+model1 <- lm( projectile$distance ~  projectile$sin2b)
+str(model1)
+model1$coefficients
+str(model1$coefficients)
+
+V0.as_pente <- model1$coefficients[2]; V0.as_pente
+
+
+```
