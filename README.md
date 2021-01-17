@@ -10,9 +10,9 @@ Pages for people interested in learning and using R in National Capital Region a
 ### News:  
 
 2020-12-10:
-- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R101 training, like the one we did this Summer. Let's do it then!  Tentative starting date -  Friday 19 January 2021. 
+- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R101 training, like the one we did this Summer. Let's do it then! -  
 <!-- We will show you how to use Data Science and Artificial Intelligence (in R and from scratch) to automatically extract -->
-We will show you how to use Data Science (in R) to gain
+We can show you how to use Data Science (in R) to extract
 insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). To enroll and more details - see [ R101](101.md).    
 
 2020-06-05:
