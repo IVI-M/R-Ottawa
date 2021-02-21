@@ -10,7 +10,7 @@ Pages for people interested in learning and using R in National Capital Region a
 ### News:  
 
 2021-01-06:
-- Join us at the *Data Engineering workshop* on 22 February, organized within the Fifth Annual Data Conference ([#GCData2021 / #DonnéesGC2021](https://wiki.gccollab.ca/2021_Data_Conference/Agenda). Hosted by CBSA, the workshop will overview the challenges and solutions related to data engineering. You will be able to experience some of data engineering  challenges first-hand, and see how these challenges can be solved using  modern  data science tools such as R and RStudio. The work on developing an R package and Shiny application to assist with data cleaning and linking will be presented. Details and registration: [here](https://www.csps-efpc.gc.ca/events/data-conference2021/)
+- Join us at the *Data Engineering workshop* on 22 February, organized within the Fifth Annual Data Conference ([#GCData2021 / #DonnéesGC2021](https://wiki.gccollab.ca/2021_Data_Conference/Agenda)). Hosted by CBSA, the workshop will overview the challenges and solutions related to data engineering. You will be able to experience some of data engineering  challenges first-hand, and see how these challenges can be solved using  modern  data science tools such as R and RStudio. The work on developing an R package and Shiny application to assist with data cleaning and linking will be presented. Details and registration: [here](https://www.csps-efpc.gc.ca/events/data-conference2021/).
 
 
 2020-12-10:
