@@ -2,15 +2,19 @@
 
 Pages for people interested in learning and using R in National Capital Region and elsewhere
 
-[ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ Community](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101](101.md).
+[ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](https://github.com/IVI-M/R-Ottawa/blob/master/resources.md) -- [ R101](101.md)
 
 
 
 
 ### News:  
 
+2021-01-06:
+- Join us at the *Data Engineering workshop* on 22 February, organized within the fifth annual Data Conference ([#GCData2021 / #DonnéesGC2021](https://wiki.gccollab.ca/2021_Data_Conference/Agenda). Hosted by CBSA, the workshop will overview the challenges and solutions related to data engineering. You will be able to experience some of data engineering  challenges first-hand, and see how these challenges can be solved using  modern  data science tools such as R and RStudio. The work on developing an R package and Shiny application to assist with data cleaning and linking will be presented. Details and registration: [here](https://www.csps-efpc.gc.ca/events/data-conference2021/)
+
+
 2020-12-10:
-- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R101 training, like the one we did this Summer. Let's do it then!  Tentative starting date -  Friday 19 January 2021. 
+- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R101 training, like the one we did this Summer. Let's do it then!  Tentative starting date -  First Friday of March 2021 (after #GCData2021  Conference)
 <!-- We will show you how to use Data Science and Artificial Intelligence (in R and from scratch) to automatically extract -->
 We will show you how to use Data Science (in R) to gain
 insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). To enroll and more details - see [ R101](101.md).    
