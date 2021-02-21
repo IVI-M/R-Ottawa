@@ -14,7 +14,7 @@ Pages for people interested in learning and using R in National Capital Region a
 
 
 2020-12-10:
-- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R training, like the one we did this Summer. Let's do it then!  Tentative starting date -  First Friday of March 2021 (after #GCData2021  Conference).
+- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R training, like the one we did last Summer. Let's do it then!  Tentative starting date -  First Friday of March 2021 (after #GCData2021  Conference).
 We will show you how to use Data Science (in R) to gain
 insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). To enroll and more details - see [ R101](101.md).    
 
