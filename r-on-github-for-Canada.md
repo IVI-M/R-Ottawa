@@ -2,7 +2,7 @@
 # Collection of open R codes repositories on GitHub
 
 
-[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [Lunches with Data Challenges](meetups.md) -- [ R101 ](101.md)
+[ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [ R101 ](101.md)
 
 
 Have an R code repository related to Ottawa or Canada? -  Submit it here!
