@@ -9,14 +9,21 @@ Pages for people interested in learning and using R in National Capital Region a
 
 ### News:  
 
+2021-02-27: GC employees, head to [https://gccode.ssc-spc.gc.ca/r4gc](https://gccode.ssc-spc.gc.ca/r4gc) for more resources and codes related to R coding and usage at GC! Join us for informal 'Lunch and Learn's meet-ups every Friday at 11:30. - See [GCcollab](https://gccollab.ca/groups/activity/7071541) for more information.
+
+2021-02-21:
+- Data Engineering Demo is ready for presentation at the #GCData2021 Conference Data Literacy workshop: [https://rCanada.shinyapps.io/demo/](https://rCanada.shinyapps.io/demo/). See workshop page for more information in [GCcollab](https://gccollab.ca/groups/activity/7071541)
+
 2021-01-06:
 - Join us at the *Data Engineering workshop* on 22 February, organized within the Fifth Annual Data Conference ([#GCData2021 / #DonnéesGC2021](https://wiki.gccollab.ca/2021_Data_Conference/Agenda)). Hosted by CBSA, the workshop will overview the challenges and solutions related to data engineering. You will be able to experience some of data engineering  challenges first-hand, and see how these challenges can be solved using  modern  data science tools such as R and RStudio. The work on developing an R package and Shiny application to assist with data cleaning and linking will be presented. Details and registration: [here](https://www.csps-efpc.gc.ca/events/data-conference2021/).
 
 
 2020-12-10:
-- Following the post at Stats Canada  Data Science [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R training, like the one we did last Summer. Let's do it then!  Tentative starting date -  First Friday of March 2021 (after #GCData2021  Conference).
+- Following the announcement at the Data Science Network for the Federal Public Service (DSNFPS) [newsletter](https://www.statcan.gc.ca/eng/data-science/network/newsletter), we received multiple requests for another R training, like the one we did last Summer. Why not?
+<!-- - Let's do it then!  Tentative starting date -  First Friday of March 2021 (after #GCData2021  Conference).
 We will show you how to use Data Science (in R) to gain
-insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). To enroll and more details - see [ R101](101.md).    
+insights from the [Public Service Employee Survey (PSES)](https://www.canada.ca/en/treasury-board-secretariat/services/innovation/public-service-employee-survey.html) results - similar to how this is done [here](https://itrack.shinyapps.io/PSES/). -->
+To enroll and more details - see [ R101](101.md).    
 
 2020-06-05:
 - We finished the first season, where we learnt how to write an interactive dashboard that visualizes the COVID datain US. - You can see the final result [here](https://itrack.shinyapps.io/covid/us.Rmd)!   All codes are posted. Resources are updated. Have great summer!
