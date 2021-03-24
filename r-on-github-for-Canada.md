@@ -1,5 +1,5 @@
 
-# Collection of open R codes repositories on GitHub
+# Collection of open R codes related to Canada on GitHub
 
 
 [ Home ](https://IVI-M.github.io/R-Ottawa/) --  [ Resources ](resources.md) -- [ Community ](community.md) -- [ R101 ](101.md)
