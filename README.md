@@ -1,4 +1,4 @@
-# Welcome to [R Ottawa](https://ivi-m.github.io/R-Ottawa/)! 
+# Welcome to [R4GC (formerly R Ottawa)](https://ivi-m.github.io/R-Ottawa/)! 
 
 [ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ R101](101.md)
 
