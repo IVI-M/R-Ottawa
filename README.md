@@ -1,4 +1,4 @@
-# Welcome to [R4GC (formerly R Ottawa)](https://ivi-m.github.io/R-Ottawa/)! 
+# Welcome to [R Ottawa](https://ivi-m.github.io/R-Ottawa/)! 
 
 [ Home](https://IVI-M.github.io/R-Ottawa/) --  [ Resources](resources.md) -- [ R101](101.md)
 
@@ -8,6 +8,8 @@ Pages for people interested in learning and using R in National Capital Region a
 
 
 ### News:  
+
+2021-05-01: THIS PORTAL IS NO LONGER UPDATED. PLEASE HEAD TO THE NEW "R4GC (Use R!) Community portal" HERE: https://open-canada.github.io/UseR/
 
 2021-02-27: GC employees, head to [https://gccode.ssc-spc.gc.ca/r4gc](https://gccode.ssc-spc.gc.ca/r4gc) for more resources and codes related to R coding and usage at GC! Join us for informal 'Lunch and Learn's meet-ups every Friday at 11:30. - See [GCcollab](https://gccollab.ca/groups/activity/7071541) for more information.
 
